@@ -1,0 +1,187 @@
+v2.0.1 (3/8/23)
+	- Fix PANR pan value inlet range, and set dial to show pan values the
+	  same way the synth modules do (50L...C...50R).
+
+v2.0.0 (3/1/23)
+	- Release (no changes from 2.0.0b9)
+
+v2.0.0b9 (2/23/23)
+	- Complete documentation for az.granulate~, az.spectdelay~, az.specteq~, and
+	  az.strum~ externals.
+	- Fix problem with Snapshots and GRANUL8R: opening file having an associated
+	  or embedded Snapshot would load correct sound file but not play it. Turns
+	  out buffer for az.granulate~ was not set at the right time.
+	- New versions of Windows externals, now in sync with Mac ones.
+	- Resize help files so that they fit on a 900-pixel tall screen.
+	- Fix CAPTR bugs relating to record duration, stereo input, and removed
+	  crop feature, which caused a lot of problems. 
+
+v2.0.0b8 (2/13/23)
+	- Include latest version of az.strum~ Windows external, so it doesn't crash.
+	- Recompile and sign/notarize Mac versions of az.specteq~ and az.spectdelay~
+	  externals.
+
+v2.0.0b7 (2/7/23)
+	- Work around a change in textedit behavior that caused a file-open dialog
+	  to appear for each Auzzie player object in a patch you open (or create).
+	- Set minimum Max version required for Auzzie to 8.3.0. This is necessary
+	  to properly support BANKR, REZON8R, and PANR.
+
+v2.0.0b6 (1/18/23)
+	- If you plug a mono audio cable into an Auzzie inlet, it will now
+	  mult it to stereo, instead of ignore it entirely.
+	- Rename PLAYR back to APLAYR, FADR to AFADR, FADR-H to AFADR-H to avoid
+	  potential conflict with Vizzie modules of the same name.
+
+v2.0.0b5 (1/16/23)
+	- Final solution for granulating a buffer whose sampling rate
+	  differs from the Max rate: now handled entirely within
+	  az.granulate~.
+	- Grain envelope types used in Auzzie now built in to az.granulate~.
+	- New PANR, FADR, and FADR-H modules.
+	- Renamed APLAYR to PLAYR.
+	- Additional help files.
+	- Many cosmetic tweaks to help files.
+	- Full documentation for az externals.
+
+v2.0.0b4 (11/21/22)
+	- Additional help tweaks and various minor bug fixes.
+	- OUT-H object for horizontal output fader, to save vertical space.
+
+v2.0.0b3 (11/18/22)
+	- Updated externals to Max SDK 8.2, with arm64 support on macOS.
+	- Changed prefix of externals from "jg" to "az".
+	- Tentative support for resampling GRANUL8R buffer when file rate
+	  does not match Max rate.
+
+v2.0.0b2 (10/27/22)
+	- Supply help files for all module categories and modules, linking from 
+	  Extras > Auzzie Overview.
+	- In 1SHOTR and STRIKR, show "Drop a sound here" in empty rectangle
+	  where sound file basename will appear.
+	- Make 1SHOTR and STRIKR play stereo files correctly.
+	- Fix stereo width and autopan in BANKR and REZON8R.
+	- Clean up module xable (ON|OFF) button UI, dropping these from some
+	  modules, when they weren't necessary.
+	- Add mute buttons to IN and OUT modules, and add an option to 
+	  mult the left to the right channel for IN.
+	- Make data inlet/outlet dots white, as in Vizzie.
+	- First stab at an icon.
+	- Many miscellaneous cleanups in modules.
+
+v2.0.0b1 (10/14/22)
+	- First version of mc-ified Auzzie — INCOMPATIBLE with v1.
+	- Removed the feature added in v1.0.19, because it's too expensive to be
+	  worth it and might cause even more confusion in an mc context.
+	- Appended '~' to the names of all audio patchers.
+	- Better support for snapshots.
+	- Convert to qmetro-driven snapshot~, instead of relying on auto mode.
+	- Remove gen10, gen24, and dcblock~ external dependencies.
+	- Add notch mode to az.rezfiltr~.
+
+v1.0.19 (1/24/22)
+	- Audio signals can be sent to Auzzie data inlets. Internally converted to
+	  messages using [snapshot~ 20]. Use Max 8.1+ to avoid long-standing
+	  snapshot~ bug.
+	  NB: There are serious doubts in the forum that this really has been fixed.
+	  The recommendation is to clock the object with qmetro, instead of relying
+	  on its built-in clock.
+
+v1.0.18 (1/17/22)
+	- Signed and notarized all included externals. Removed 32-bit Windows
+	  externals.
+
+v1.0.17 (12/24/19)
+	- New 2DELAYR module: stereo delay with feedback path filter
+	- MIXR-3sx1s and MIXR-4x1 have mute buttons for each fader.
+	- Add missing CAPTR and ENVELOPR snippets.
+	- Support jit_gl_texture, as well as jit_matrix, messages when convering
+	  video output into a 0-1 control source.
+
+v1.0.16 (11/17/19)
+	GAMETRAKR module:
+	- Fix bug: failed to write calibration file when you close the calibration
+	  window.
+	- Don't print err. msg. to console when there's no calibration file at load
+	  time.
+	- User-adjustable "calibration time": time spent moving tethers in each
+	  dimension.
+
+v1.0.15 (10/28/19)
+	- Fix bug: sending a list of 32 delay times to the second inlet of SDELAYR
+	  didn't do anything. Thanks to Jason Choi for finding this.
+
+v1.0.14 (10/07/19)
+	- Change name of Auzzie Info patcher to Auzzie Overview.
+
+v1.0.13 (10/06/19)
+	- Added snippets, so you can drag Auzzie modules into the patcher from the
+	  Snippets icon, instead of digging through the File Browser. Much easier.
+
+v1.0.12 (11/25/18)
+	- Fix bug in Max 8: STRIKR and 1SHOTR would not read drag-and-dropped sound
+	  files.
+
+v1.0.11 (10/2/17)
+	- Support multiple Gametraks connected to the same machine.
+
+v1.0.10 (7/19/17)
+	- Change data storage range for freq and cutoff params in COMBR, REZFILTR,
+	  REZON8R, and RINGR. These used to be 0-1; now they're 20-20000. If you
+	  were sending input into the inlets, this will make no difference, but if
+	  you were storing the settings of these modules in pattr presets, the
+	  ranges will now be wrong. Take note of your current settings, and correct
+	  them in the preset .json files before updating auzzie.  Sorry.
+
+v1.0.9 (5/27/17)
+	- Add attack and release times to BANKR, so that notes can fade in and out
+	  gracefully.
+
+v1.0.8 (1/12/17)
+	- Fixed a bug that could cause a zero as input to a data inlet not to do
+	  anything.
+	- Fixed a bug that caused the buffer referenced by CAPTR to be cleared when
+	  changing presets, even if the capture duration was not changed.
+
+v1.0.7 (10/03/16)
+	- Can send "reset" to WAVR and FMODR to stop all sounding notes.
+
+v1.0.6 (9/25/16)
+	- New module GAMETRAKR, for using the Gametrak tether controller.
+	- New module CAPTR, for creating live-sampling patches, with sound rendered
+	  by APLAYR or GRANUL8R, which can now access external buffer~ objects.
+	- Changed grain rate and dur dials in GRANUL8R to an exponential curve,
+	  giving better resolution at the bottom of the range.
+
+v1.0.5 (9/15/16)
+	- New module ENVELOPR, to make phrase envelopes for streams of short notes.
+	- Recompilation of jg.* externals for Windows with statically linked C
+	  runtime library. This is to avoid Error 126 on some Windows systems.
+	- APLAYR inlets that act as switches can accept int 0|1 as well as float.
+	- Redo Auzzie Info and Auzzie Example patchers to fit on laptop screens.
+	- Numerous cosmetic changes, for consistency.
+
+v1.0.4 (9/06/16)
+	- Fixed a bug that could create a pitch glitch at the beginning of a note
+	  having a fast attack time in FMODR, NOISR, and WAVR.
+
+v1.0.3 (9/06/16)
+	- New generator module: STRUMR (plucked-string synth).
+	- Can feed "direct" and "rand" messages to SDELAYR.
+	- Increased range of attack and release dials for FMODR, WAVR, and NOISR.
+	- Improvements to FMODR, NOISR, and WAVR to reduce stuck notes.
+	- More sensible velocity-to-amplitude conversion for FMODR, NOISR, and WAVR.
+	- Improvements to FMODR and WAVR to make vibrato phase less correlated
+	  between voices, and make changing the polyphony voice-count less glitchy.
+	- Fixed filter blowups in certain cases when turning off the filter in NOISR.
+
+v1.0.2 (9/01/16)
+	- Screwup in handling version numbers, so skipping this version.
+
+v1.0.1 (8/29/16)
+	- Added HEMI-M and HEMI-6 modules for working with hemispherical speakers.
+	- Added IN1 module for taking audio input from left channel.
+
+v1.0.0 (8/21/16)
+	- Initial port from v0.8 (for Max 6) and extensive overhaul.
+
