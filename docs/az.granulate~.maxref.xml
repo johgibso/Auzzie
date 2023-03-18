@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<!--Data marked TEXT_HERE, INLET_TYPE, OUTLET_TYPE, ARG_NAME and ARG_TYPE need to be filled in-->
+<c74object name="az.granulate~" module="msp" category="Granulation">
+	<digest>
+		Granulation of a sample buffer
+	</digest>
+	<description>
+		The <o>az.granulate~</o> object performs granulation on the sound stored in a <o>buffer~</o> object. It decomposes the audio into short grains of sound and then reconstructs a new stream of sound out of the grains, according to a set of parameters adjustable in real time.
+	</description>
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">John Gibson</metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Granulation</metadata>
+		<metadata name="tag">Sampling</metadata>
+	</metadatalist>
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="INLET_TYPE">
+			<digest>
+				messages
+			</digest>
+			<description>
+				Many messages (see Messages section)
+			</description>
+		</inlet>
+	</inletlist>
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>
+				Channel 1 Output
+			</digest>
+			<description>
+				TEXT_HERE
+			</description>
+		</outlet>
+	</outletlist>
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="buffer-name" type="symbol" optional="0">
+			<digest>
+				Buffer name
+			</digest>
+			<description>
+				Names the <o>buffer~</o> object containing the sample to be used by <o>az.granulate~</o> for granulation.
+			</description>
+		</objarg>
+		<objarg name="number-of-outputs" type="int" optional="1">
+			<digest>
+				Number of audio outputs
+			</digest>
+			<description>
+				A second argument may specify the number of output channels. The default number of channels is 1. If the <o>buffer~</o> being granulated has more than one channel, <o>az.granulate~</o> will read only the first channel, unless a <m>chan</m> message tells it otherwise. If <o>az.granulate~</o> has more than one output channel, it will pan grains between the outputs, taking into account any <m>panrange</m> messages received. The panning algorithm maintains constant power between adjacent outputs. (See the <m>pointsource</m> panning variant.)
+			</description>
+		</objarg>
+	</objarglist>
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="(mouse)">
+			<digest>
+				Open a file buffer display window
+			</digest>
+			<description>
+				Double-clicking on a <o>az.granulate~</o> object opens the sample display window of the <o>buffer~</o> object associated with the <o>az.granulate~</o> object.
+			</description>
+		</method>
+		<method name="int">
+			<arglist>
+				<arg name="start-stop" type="int" optional="0" />
+			</arglist>
+			<digest>
+				Turn granulation on and off
+			</digest>
+			<description>
+				<m>1</m> tells <o>az.granulate~</o> to start playing grains; <m>0</m> tells it to stop.
+			</description>
+		</method>
+		<method name="3rdorder">
+			<arglist>
+				<arg name="3rdorder" type="int" optional="0" />
+			</arglist>
+			<digest>
+				The quality of interpolation used in playback
+			</digest>
+			<description>
+				The word <m>3rdorder</m>, followed by a <m>0</m> or a <m>1</m>. If 0, transpose using 2nd-order interpolation. If 1, transpose using 3rd-order interpolation, which can give smoother results for large negative transpositions. By default, <o>az.granulate~</o> uses 2nd-order interpolation.
+			</description>
+		</method>
+		<method name="amprange">
+			<arglist>
+				<arg name="min-amp" type="list" optional="0" units="db" />
+				<arg name="max-amp" type="list" optional="0" units="db" />
+			</arglist>
+			<digest>
+				The range of randomly determined grain amplitudes
+			</digest>
+			<description>
+				The word <m>amprange</m>, followed by two floats (min and max), which define the range of randomly determined grain amplitudes, in dBFS. The default range is 0-0 (that is, no amplitude scaling). Giving just one value will set both min and max to that value.
+			</description>
+		</method>
+		<method name="chan">
+			<arglist>
+				<arg name="chan" type="int" optional="0" />
+			</arglist>
+			<digest>
+				The input channel to granulate
+			</digest>
+			<description>
+				The word <m>chan</m>, followed by an integer giving the input channel number. This is ignored if it exceeds the channel count of the <o>buffer~</o> object containing the sample to be granulated. By default, the input channel number is 1.
+			</description>
+		</method>
+		<method name="durrange">
+			<arglist>
+				<arg name="min-dur" type="list" optional="0" units="ms" />
+				<arg name="max-dur" type="list" optional="0" units="ms" />
+			</arglist>
+			<digest>
+				The range of randomly determined grain durations
+			</digest>
+			<description>
+				The word <m>durrange</m>, followed by two floats (min and max), which define the range of grain durations used, in milliseconds. The default range is 10-10. Giving just one value will set both min and max to that value.
+			</description>
+		</method>
+		<method name="env">
+			<arglist>
+				<arg name="envelope-name" type="symbol" optional="1" />
+			</arglist>
+			<digest>
+				The name of the grain envelope to use.
+			</digest>
+			<description>
+				The word <m>env</m>, followed by the name of a one-channel <o>buffer~</o> object containing the grain envelope. Or, you can request one of the built-in envelopes: "hanning", "trapezoid", "rectangle", "fastattack", or "slowattack". By default, <o>az.granulate~</o> uses the built-in hanning window envelope. To return to this envelope after using any other one, send the <m>env</m> message with no second word, or send "env hanning".
+			</description>
+		</method>
+		<method name="grid">
+			<arglist>
+				<arg name="grid-list" type="list" optional="1" />
+			</arglist>
+			<digest>
+				A rhythmic template for individual grains
+			</digest>
+			<description>
+				The word <m>grid</m>, followed by one or more ints, constructs a rhythmic template used by <o>az.granulate~</o> to decide whether to play a grain. The granulator cycles through the list of ints. If the current int is non-zero, the grain is played; if the current int is zero, the grain is not played. This feature is meant to be used when the grain rate is sub-audio &#8212; slow enough to produce a series of pulses, rather than a smooth stream of sound. To cancel the template, send the <m>grid</m> messge alone, with no numbers.
+			</description>
+		</method>
+		<method name="hop">
+			<arglist>
+				<arg name="hop" type="float" optional="0" units="ms" />
+			</arglist>
+			<digest>
+				The time between successive grains
+			</digest>
+			<description>
+				The word <m>hop</m>, followed by one float giving the time between successive grains (i.e., the "hop time"), in milliseconds. This is the inverse of the grain rate (set by the <m>rate</m> message). Sending a <m>hop</m> message overrides the current rate value. The default hop time is 10 milliseconds.
+			</description>
+		</method>
+		<method name="info">
+			<arglist>
+				<arg name="info-tag" type="symbol" optional="1" />
+			</arglist>
+			<digest>
+				Print internal object state
+			</digest>
+			<description>
+				The word <m>info</m>, with no arguments, tells <o>az.granulate~</o> to print the current number of simultaneous voices it is playing, as well as the maximum number of simultaneous voices played since object creation or the last info message. It also prints all the settings, each tagged with the name of the message that sets it. Appending to <m>info</m> a single-word argument giving one of these tags (such as "grid") will print just that setting. For example: for the buffer name, use "buffer"; for the voice stats, use "voices".
+			</description>
+		</method>
+		<method name="injitter">
+			<arglist>
+				<arg name="injitter" type="float" optional="0" units="ms" />
+			</arglist>
+			<digest>
+				Maximum input start time variation
+			</digest>
+			<description>
+				The word <m>injitter</m>, followed by one float giving the maximum randomly determined amount, in milliseconds, to add or subtract from the input start time (i.e., within the input buffer) for a grain. By default, <m>injitter</m> is <m>0</m>.
+			</description>
+		</method>
+		<method name="inskip">
+			<arglist>
+				<arg name="inskip" type="float" optional="0" units="ms" />
+			</arglist>
+			<digest>
+				Jump to a position within the input buffer
+			</digest>
+			<description>
+				The word <m>inskip</m>, followed by one float giving a start time in milliseconds within the buffer to start granulating. This time is automatically constrained to fall within the granulation window (<m>winrange</m>). <m>inskip</m> can be updated rapidly for stutter or jump-cut effects.
+			</description>
+		</method>
+		<method name="outjitter">
+			<arglist>
+				<arg name="outjitter" type="float" optional="0" units="ms" />
+			</arglist>
+			<digest>
+				Maximum grain onset time variation
+			</digest>
+			<description>
+				The word <m>outjitter</m>, followed by one float giving the maximum randomly determined amount, in milliseconds, to add or subtract from the steady grain onset time, which is determined by the grain hop time (<m>hop</m>) or grain rate (<m>rate</m>). By default, <m>outjitter</m> is <m>0</m>.
+			</description>
+		</method>
+		<method name="panrange">
+			<arglist>
+				<arg name="min-pan" type="float" optional="0" />
+				<arg name="max-pan" type="float" optional="0" />
+			</arglist>
+			<digest>
+				The range of randomly determined grain pan locations
+			</digest>
+			<description>
+				The word <m>panrange</m>, followed by two floats (min and max), which define the width of the image and the position of its center point: <m>1.0</m> is hard left; <m>2.0</m> is hard right for stereo. <m>2.5</m> is between the 2nd and 3rd channels in a multichannel setup. The numbers must be in ascending order. Pan values for individual grains are chosen randomly within this range. Giving just one value will set both min and max to that value. The default range is 1.0 to the number of output channels. Example: "panrange 1.2 1.6" would center the stereo image around 1.4 (a little left of center), and pan between 1.2 (almost hard left) and 1.6 (a little right of center). This message is ignored if the number of <o>az.granulate~</o> output channels is less than two. See the <m>pointsource</m> message for alternate panning behavior.
+			</description>
+		</method>
+		<method name="pointsource">
+			<arglist>
+				<arg name="pointsource" type="int" optional="0" />
+			</arglist>
+			<digest>
+				Force grains to sound only from a single channel
+			</digest>
+			<description>
+				The word <m>pointsource</m>, followed by a <m>0</m> or a <m>1</m>. If <m>1</m>, the randomly selected pan value for a grain &#8212; chosen within the range of values given by the <m>panrange</m> message &#8212; is rounded to the nearest whole number, and the grain goes only to that channel number. If <m>0</m>, panning behaves as described for the <m>panrange</m> message. The default value of <m>pointsource</m> is <m>0</m>.
+			</description>
+		</method>
+		<method name="position">
+			<arglist>
+				<arg name="position" type="int" optional="0" />
+			</arglist>
+			<digest>
+				Report position of read pointer within input buffer
+			</digest>
+			<description>
+				The word <m>position</m>, followed by a <m>0</m> or a <m>1</m>. If <m>1</m>, the position of the read pointer within the current buffer, in samples relative to the start of the buffer, is sent out the right-most outlet at the end of every signal vector. If <m>0</m>, the position is not reported. The default value of <m>position</m> is <m>0</m>.
+			</description>
+		</method>
+		<method name="rate">
+			<arglist>
+				<arg name="rate" type="float" optional="0" units="hz" />
+			</arglist>
+			<digest>
+				The rate that grains are emitted
+			</digest>
+			<description>
+				The word <m>rate</m>, followed by one float giving the grain rate, in grains per second. This is the inverse of the grain hop time (set by the <m>hop</m> message). Sending a <m>rate</m> message overrides the current <m>hop</m> value. The default grain rate is 100 grains per second.
+			</description>
+		</method>
+		<method name="reinit">
+			<arglist>
+				<arg name="reinit" type="int" optional="0" />
+			</arglist>
+			<digest>
+				Start next grain at beginning of next signal vector
+			</digest>
+			<description>
+				The word <m>reinit</m>, followed by a <m>0</m> or a <m>1</m>. If <m>1</m>, when restarting playback (with the <m>int</m> message), <o>az.granulate~</o> begins the first grain at the next signal vector start, instead of wherever the next grain was due to begin; cancels grains that were still in progress when playback was last stopped; and restarts any rhythmic grid in effect (<m>grid</m> message). This is useful for synchronizing playback of sparse grains in a rhythmic context. (Note that this synchronization cannot be sample-accurate, since playback start is quantized to signal vector boundaries.) If <m>0</m>, when restarting playback, continue where playback was when last stopped, possibly in the middle of a grain. The default value of reinit is <m>1</m>.
+			</description>
+		</method>
+		<method name="reverse">
+			<arglist>
+				<arg name="reverse" type="int" optional="0" />
+			</arglist>
+			<digest>
+				Play grain waveforms backwards
+			</digest>
+			<description>
+				The word <m>reverse</m>, followed by a <m>0</m> or a <m>1</m>. If <m>1</m>, when traversal is backward (i.e., the last value of the <m>trav message</m> is negative), grains play in reverse. If <m>0</m>, grains play forward, even when traversal is backward. The default value of <m>reverse</m> is <m>0</m>. Note that a value of <m>1</m> can cause a glitch when traversal goes from positive to negative, or vice versa.
+			</description>
+		</method>
+		<method name="seed">
+			<arglist>
+				<arg name="seed" type="int" optional="0" />
+			</arglist>
+			<digest>
+				Seed internal random number generators
+			</digest>
+			<description>
+				The word <m>seed</m>, followed by an integer greater than or equal to 0. By default, the seed is <m>0</m>.
+			</description>
+		</method>
+		<method name="set">
+			<arglist>
+				<arg name="buffer-name" type="symbol" optional="0" />
+			</arglist>
+			<digest>
+				The buffer used for granulation input
+			</digest>
+			<description>
+				The word <m>set</m>, followed by the name of a <o>buffer~</o> object, to switch the buffer used for granulation.
+			</description>
+		</method>
+<!--
+		<method name="speed">
+			<arglist>
+				<arg name="speed" type="float" optional="0" />
+			</arglist>
+			<digest>
+				Speed of traversal through input buffer
+			</digest>
+			<description>
+				The word <m>speed</m>, followed by one float giving the rate at which <o>az.granulate~</o> traverses the input window (given by the <m>winrange</m> message). <m>0</m> means no movement; <m>1</m> moves forward at the normal playback rate; <m>2.5</m> moves forward at a rate that is 2.5 times the normal rate; <m>-1</m> moves backward at the normal rate. The default rate is <m>1</m>. (Same as the <m>trav</m> message.)
+			</description>
+		</method>
+-->
+		<method name="trans">
+			<arglist>
+				<arg name="trans" type="float" optional="0" />
+			</arglist>
+			<digest>
+				Grain transposition
+			</digest>
+			<description>
+				The word <m>trans</m>, followed by one float giving the grain transposition in semitones, expressed as a decimal number, so that transpositions between semitones are possible. The default transposition is <m>0</m>.
+			</description>
+		</method>
+		<method name="transcoll">
+			<arglist>
+				<arg name="transcoll-list" type="list" optional="1" />
+			</arglist>
+			<digest>
+				Constrain grain transpositions to a list of values
+			</digest>
+			<description>
+				The word <m>transcoll</m>, followed by two or more floats giving grain transposition levels in semitones, expressed as decimal numbers, so that transpositions between semitones are possible. These transpositions are selected randomly during granulation. The selected transposition is added to the value set using the <m>trans</m> message. The message <m>transcoll</m> (with no argument) cancels a previous transposition collection. By default, there is no transposition collection. Note that the <m>transjitter</m> message has no effect when there is an active transposition collection.
+			</description>
+		</method>
+		<method name="transjitter">
+			<arglist>
+				<arg name="transjitter" type="float" optional="0" />
+			</arglist>
+			<digest>
+				Maximum grain transposition variation
+			</digest>
+			<description>
+				The word <m>transjitter</m>, followed by one float giving the maximum amount to add or subtract from the current transposition value in semitones, expressed as a decimal number, so that transpositions between semitones are possible. The default transposition jitter is <m>0</m>. If a transposition collection (<m>transcoll</m> message) is active, <m>transjitter</m> is ignored.
+			</description>
+		</method>
+		<method name="trav">
+			<arglist>
+				<arg name="trav" type="float" optional="0" />
+			</arglist>
+			<digest>
+				Speed of traversal through input buffer
+			</digest>
+			<description>
+				The word <m>trav</m>, followed by one float giving the rate at which <o>az.granulate~</o> traverses the input window (given by the <m>winrange</m> message). <m>0</m> means no movement; <m>1</m> moves forward at the normal playback rate; <m>2.5</m> moves forward at a rate that is 2.5 times the normal rate; <m>-1</m> moves backward at the normal rate. The default rate is <m>1</m>.<!-- (Same as the <m>speed</m> message.) -->
+			</description>
+		</method>
+		<method name="winrange">
+			<arglist>
+				<arg name="min-win" type="float" optional="0" />
+				<arg name="max-win" type="float" optional="0" />
+			</arglist>
+			<digest>
+				The selection range within the input buffer
+			</digest>
+			<description>
+				The word <m>winrange</m>, followed by two floats (min and max), which define the input window &#8212; the time range, in milliseconds, of the sample <o>buffer~</o> to granulate. If max is set to zero, it will be set to the end of the current buffer contents. Giving just one value will set both min and max to that value. Note that <m>winrange</m> constrains the starting point when reading a grain from the buffer. The grain can play past the window end point. For this reason, it is best to inset the window from the end of the buffer by the maximum grain duration, if there is a chance that the start point for input could be just before the window end. Otherwise, the grain could run out of sound to read. (When reverse reading is on, the same advice applies to the window start.)
+			</description>
+		</method>
+		<method name="wrap">
+			<arglist>
+				<arg name="wrap" type="int" optional="0" />
+			</arglist>
+			<digest>
+				Play the input window in a loop
+			</digest>
+			<description>
+				The word <m>wrap</m>, followed by a <m>0</m> or a <m>1</m>. If <m>1</m>, when <o>az.granulate~</o> reaches the end of the input window, it wraps around to the beginning. If <m>0</m>, it does not wrap, and you must use the <m>inskip</m> message to restart playback after the granulator reaches the end of the input window. If <m>wrap</m> is off, and you turn it back on, you must use the <m>inskip</m> message to restart playback. The default value of wrap is <m>1</m>.
+			</description>
+		</method>
+	</methodlist>
+	<!--ATTRIBUTES-->
+	<!--EXAMPLE-->
+	<examplelist>
+		<example caption="" img="" />
+	</examplelist>
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="bogus">
+			TEXT_HERE
+		</seealso>
+	</seealsolist>
+
+	<misc name="Output">
+		<entry name="signal">
+			<description>
+				Out left outlet: Sample output for the first channel.
+			<br />
+			<br />
+				Out middle outlets: Sample output for subsequent channels, if <o>az.granulate~</o> has been configured for multiple output channels (by the second argument to the object).
+			</description>
+		</entry>
+		<entry name="int">
+			<description>
+				Out right outlet: the position of the read pointer within the input buffer, in samples, at the end of every signal vector. Use the <m>position</m> message to enable these messages.
+			</description>
+		</entry>
+	</misc>
+
+</c74object>

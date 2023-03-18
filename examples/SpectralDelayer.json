@@ -1,0 +1,93 @@
+{
+	"pattrstorage" : 	{
+		"name" : "spectraldelayer-storage",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"tempo" : [ 200 ],
+					"transp" : [ 0 ],
+					"wavr::bend" : [ 0.0 ],
+					"wavr::dutycycle" : [ 0.0 ],
+					"wavr::portamento" : [ 50.0 ],
+					"wavr::polyphony" : [ 1.0 ],
+					"wavr::pan" : [ 0.0 ],
+					"wavr::release" : [ 200.0 ],
+					"wavr::vibdepth" : [ 0.302362 ],
+					"wavr::vibrate" : [ 7.410236 ],
+					"wavr::vibwave" : [ 1.0 ],
+					"wavr::sustain" : [ 0.401575 ],
+					"wavr::decay" : [ 20.0 ],
+					"wavr::attack" : [ 20.0 ],
+					"wavr::oscwave" : [ 0.0 ],
+					"sdelayr[1]::feedback" : [ 0.398425 ],
+					"sdelayr[1]::wetdry" : [ 1.0 ],
+					"sdelayr[1]::maxtime" : [ 6.0 ],
+					"sdelayr[1]::delaytimes" : [ 0.478, 0.291, 0.65, 0.628, 0.085, 0.981, 0.415, 0.968, 0.791, 0.59, 0.053, 0.993, 0.865, 0.741, 0.988, 0.685, 0.805, 0.546, 0.462, 0.57, 0.148, 0.231, 0.817, 0.946, 0.719, 0.159, 0.697, 0.127, 0.562, 0.582, 0.651, 0.284 ],
+					"sdelayr[1]::rotate" : [ 8.0 ],
+					"reverber8r::roomsize" : [ 0.901575 ],
+					"reverber8r::decaytime" : [ 0.304724 ],
+					"reverber8r::wetdry" : [ 1.0 ],
+					"reverber8r::cutoff" : [ 1.0 ],
+					"aplayr::speed-range" : [ 0 ],
+					"aplayr::transp" : [ 1 ],
+					"aplayr::soundfile" : [ "anton.aif" ],
+					"aplayr::patcher-atk::attack" : [ 0.0 ],
+					"aplayr::patcher-rel::release" : [ 0.0 ],
+					"aplayr::normalized-speed" : [ 0.625 ],
+					"aplayr::loopend" : [ 1236.621357980372977 ],
+					"aplayr::loopstart" : [ 551.700698999999986 ],
+					"out::mute" : [ 0 ],
+					"afadr-h::mute" : [ 0 ],
+					"afadr-h::fader" : [ -18.0 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"tempo" : [ 200 ],
+					"transp" : [ -2 ],
+					"wavr::bend" : [ 0.0 ],
+					"wavr::dutycycle" : [ 0.0 ],
+					"wavr::portamento" : [ 50.0 ],
+					"wavr::polyphony" : [ 1.0 ],
+					"wavr::pan" : [ 0.0 ],
+					"wavr::release" : [ 200.0 ],
+					"wavr::vibdepth" : [ 0.302362 ],
+					"wavr::vibrate" : [ 7.410236 ],
+					"wavr::vibwave" : [ 1.0 ],
+					"wavr::sustain" : [ 0.401575 ],
+					"wavr::decay" : [ 20.0 ],
+					"wavr::attack" : [ 20.0 ],
+					"wavr::oscwave" : [ 0.0 ],
+					"sdelayr[1]::feedback" : [ 0.398425 ],
+					"sdelayr[1]::wetdry" : [ 0.795276 ],
+					"sdelayr[1]::maxtime" : [ 6.0 ],
+					"sdelayr[1]::delaytimes" : [ 0.495, 0.732, 0.527, 0.88, 0.258, 0.947, 0.951, 0.58, 0.197, 0.327, 0.359, 0.989, 0.036, 0.473, 0.474, 0.528, 0.612, 0.213, 0.173, 0.736, 0.752, 0.66, 0.384, 0.018, 0.745, 0.857, 0.004, 0.003, 0.275, 0.164, 0.591, 0.207 ],
+					"sdelayr[1]::rotate" : [ 8.0 ],
+					"reverber8r::roomsize" : [ 0.830709 ],
+					"reverber8r::decaytime" : [ 0.304724 ],
+					"reverber8r::wetdry" : [ 1.0 ],
+					"reverber8r::cutoff" : [ 1.0 ],
+					"aplayr::speed-range" : [ 0 ],
+					"aplayr::transp" : [ 1 ],
+					"aplayr::soundfile" : [ "sho0630.aif" ],
+					"aplayr::patcher-atk::attack" : [ 0.0 ],
+					"aplayr::patcher-rel::release" : [ 0.0 ],
+					"aplayr::normalized-speed" : [ 0.70315 ],
+					"aplayr::loopend" : [ 3138.616888642841332 ],
+					"aplayr::loopstart" : [ 610.657617999999957 ],
+					"out::mute" : [ 0 ],
+					"afadr-h::mute" : [ 0 ],
+					"afadr-h::fader" : [ -18.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

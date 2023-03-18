@@ -1,0 +1,5 @@
+{
+	"name" : "Auzzie Example",
+	"type" : "query",
+	"contents" : [ "package:Auzzie", "tag:Example" ]
+}

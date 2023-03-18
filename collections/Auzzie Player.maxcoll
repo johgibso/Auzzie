@@ -1,0 +1,5 @@
+{
+	"name" : "Auzzie Player",
+	"type" : "query",
+	"contents" : [ "package:Auzzie", "tag:Player" ]
+}

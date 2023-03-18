@@ -1,0 +1,5 @@
+{
+	"name" : "Auzzie Effect",
+	"type" : "query",
+	"contents" : [ "package:Auzzie", "tag:Effect" ]
+}

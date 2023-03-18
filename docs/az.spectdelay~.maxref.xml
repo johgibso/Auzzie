@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<!--Data marked TEXT_HERE, INLET_TYPE, OUTLET_TYPE, ARG_NAME and ARG_TYPE need to be filled in-->
+<c74object name="az.spectdelay~" module="msp" category="Delay">
+	<digest>
+		Spectral delay processor
+	</digest>
+	<description>
+		The <o>az.spectdelay~</o> object performs spectral delay on the incoming sound stream. It splits the audio into multiple frequency bands and gives each band its own delay line with feedback.
+	</description>
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">John Gibson</metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Delay</metadata>
+	</metadatalist>
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal/float">
+			<digest>
+				mono signal, messages
+			</digest>
+			<description>
+				Mono signal to be processed and messages that determine how this works
+			</description>
+		</inlet>
+	</inletlist>
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>
+				Mono signal output
+			</digest>
+			<description>
+				Mono signal containing processed sound
+			</description>
+		</outlet>
+	</outletlist>
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="fft-length" type="symbol" optional="1">
+			<digest>
+				FFT length
+			</digest>
+			<description>
+				Sets the number of samples fed to the FFT algorithm. If missing, it is 1024 (and window-length is 2048, overlap is 2, and max-delay is 6).
+			</description>
+		</objarg>
+		<objarg name="window-length" type="symbol" optional="1">
+			<digest>
+				Window length
+			</digest>
+			<description>
+				Sets the number of samples in a window. This is normally two times the FFT length, but can be any power-of-two multiple of the FFT size from 1 to 8. If missing, it is 2048 (and overlap is 2, and max-delay is 6). NOTE: It takes a certain, fixed amount of time for the sound to enter the object and emerge processed. If you want to delay your dry signal so that it synchronizes with the processed signal, delay it by the window length.
+			</description>
+		</objarg>
+		<objarg name="fft-window-overlap" type="symbol" optional="1">
+			<digest>
+				FFT window overlap
+			</digest>
+			<description>
+				Sets the degree of overlap between successive FFT frames. 1: no overlap, 2: FFTlen/2, 4: FFTlen/4, etc. 2 or 4 is usually fine; 1 is fluttery; 4 gives fewer artifacts; higher overlaps use more CPU. If missing, it is 2 (and max-delay is 6).
+			</description>
+		</objarg>
+		<objarg name="max-delay-time" type="int" optional="1">
+			<digest>
+				Maximum delay time
+			</digest>
+			<description>
+				Sets the maximum delay time for any frequency band, in seconds. If missing, it is 6 seconds.
+			</description>
+		</objarg>
+	</objarglist>
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="binmap">
+			<arglist>
+				<arg name="binmap" type="list" optional="1" />
+			</arglist>
+			<digest>
+				Allocate FFT bands to EQ gain inputs
+			</digest>
+			<description>
+				The word <m>binmap</m> followed by a list of ints determines the number of consecutive FFT frequency bands (or <m>bins</m>) to affect by each of the elements of a list of EQ gain values. The binmap list and the EQ gain list must be the same size. Giving the word "binmap" alone cancels the use of a binmap list. For example, the message "binmap 1 2 10 20 50" assumes a previous <m>eq</m> message of five floats and treats the first of those floats as the gain of the lowest FFT bin, the second as the gain of the next two FFT bins, the third as the gain of the next ten FFT bins, the fourth as the gain of the next 20 FFT bins, and the fifth as the gain of the next 50 FFT bins (and any leftover bins above these). The point of this scheme is to let you use a manageable number of sliders to control the large number of frequency bands typically produced by an FFT.
+			</description>
+		</method>
+		<method name="clear">
+			<arglist />
+			<digest>
+				Clear the spectral delay lines
+			</digest>
+			<description>
+				The word <m>clear</m>. This fills the spectral delay lines for all frequency bands with zeroes, resulting in silence.
+			</description>
+		</method>
+		<method name="dbinmap">
+			<arglist>
+				<arg name="dbinmap" type="list" optional="1" />
+			</arglist>
+			<digest>
+				Allocate FFT bands to delay time and feedback inputs
+			</digest>
+			<description>
+				The word <m>dbinmap</m> followed by a list of ints determines the number of consecutive FFT frequency bands (or <m>bins</m>) to affect by each of the elements of two lists: the delay time list and the delay feedback list. The dbinmap list and these other two lists must be the same size. Giving the word "dbinmap" alone cancels the use of a dbinmap list. For example, the message "dbinmap 1 2 10 20 50" assumes a previous <m>dt</m> message of five floats and treats the first of those floats as the delay time of the lowest FFT bin, the second as the delay time of the next two FFT bins, the third as the delay time of the next ten FFT bins, the fourth as the delay time of the next 20 FFT bins, and the fifth as the delay time of the next 50 FFT bins (and any leftover bins above these). The same applies to any list of feedback values. The point of this scheme is to let you use a manageable number of sliders to control the large number of frequency bands typically produced by an FFT.
+			</description>
+		</method>
+		<method name="drange">
+			<arglist>
+				<arg name="min-freq" type="list" optional="0" units="hz" />
+				<arg name="max-freq" type="list" optional="0" units="hz" />
+			</arglist>
+			<digest>
+				Set the range of frequencies controlled by delay lists
+			</digest>
+			<description>
+				The word <m>drange</m>, followed by two floats (min and max), which define the frequency range within which the delay time (<m>dt</m>) and feedback (<m>fb</m>) lists function. Giving 0 for max sets the maximum frequency to the Nyquist frequency (half of the sampling rate). By default, the range is 0 Hz to Nyquist. When the frequency range is not the full range, the first value of a delay time or feedback list controls all the FFT bins from 0 Hz to approximately the lowest value of the frequency range. Similarly, the last value of one of these lists controls all the FFT bins from approimately the highest value of the frequency range to the Nyquist frequency. Note that <m>drange</m> is ignored when using the <m>dbinmap</m> list.
+			</description>
+		</method>
+		<method name="dt">
+			<arglist>
+				<arg name="dt" type="list" optional="0" units="seconds"/>
+			</arglist>
+			<digest>
+				Set the list of delay times
+			</digest>
+			<description>
+				The word <m>dt</m>, followed by a list of floats, which define the delay times (in seconds) for individual frequency bands. The effect depends on the delay frequency range (<m>drange</m>) or <m>dbinmap</m> list. If the <m>dt</m> list contains just one number, then it is applied to all the frequency bands.
+			</description>
+		</method>
+		<method name="dx">
+			<arglist>
+				<arg name="index" type="int" optional="0"/>
+				<arg name="delay-time" type="float" optional="0"/>
+			</arglist>
+			<digest>
+				Assign one delay time 
+			</digest>
+			<description>
+				The word <m>dx</m>, followed by a zero-based index (int) and delay time (float) to replace the value at that index in the currently defined delay time list. This list must already have at least index + 1 values.
+			</description>
+		</method>
+		<method name="eq">
+			<arglist>
+				<arg name="eq" type="list" optional="0" units="dB"/>
+			</arglist>
+			<digest>
+				Set the list of EQ gains
+			</digest>
+			<description>
+				The word <m>eq</m>, followed by a list of floats, which define the amplitude scaling for individual frequency bands, in decibels. (0 dB: no change, +dB: boost, -dB: cut.) The effect depends on the EQ frequency range (<m>range</m>) or <m>binmap</m> list. If the <m>eq</m> list contains just one number, then it is applied to all the frequency bands.
+			</description>
+		</method>
+		<method name="ex">
+			<arglist>
+				<arg name="index" type="int" optional="0"/>
+				<arg name="eq-gain" type="float" optional="0"/>
+			</arglist>
+			<digest>
+				Assign one EQ gain
+			</digest>
+			<description>
+				The word <m>ex</m>, followed by a zero-based index (int) and EQ amplitude scaling in dB (float) to replace the value at that index in the currently defined EQ gain list. This list must already have at least index + 1 values.
+			</description>
+		</method>
+		<method name="fb">
+			<arglist>
+				<arg name="fb" type="list" optional="0" units=""/>
+			</arglist>
+			<digest>
+				Set the list of feedback multipliers
+			</digest>
+			<description>
+				The word <m>fb</m>, followed by a list of floats, which define the delay feedback multiplier (-1 to 1, inclusive) for individual frequency bands. The effect depends on the delay frequency range (<m>drange</m>) or <m>dbinmap</m> list. If the <m>fb</m> list contains just one number, then it is applied to all the frequency bands. If the feedback list has more than one item, the size of the list should match the size of the delay time (<m>dt</m>) list. If it doesn't, the internal feedback list will be set to the same length as the delay time list, with any extra values set to the last argument to the <m>fb</m> message. If changing both list sizes, change the delay time list first.
+			</description>
+		</method>
+		<method name="fx">
+			<arglist>
+				<arg name="index" type="int" optional="0"/>
+				<arg name="feedback" type="float" optional="0"/>
+			</arglist>
+			<digest>
+				Assign one feedback multiplier
+			</digest>
+			<description>
+				The word <m>fx</m>, followed by a zero-based index (int) and delay feedback multiplier (float) to replace the value at that index in the currently defined delay feedback list. This list must already have at least index + 1 values.
+			</description>
+		</method>
+		<method name="fft">
+			<arglist>
+				<arg name="fft-length" type="int" optional="0" units="samples" />
+				<arg name="window-length" type="int" optional="0" units="samples" />
+				<arg name="overlap" type="int" optional="0" units="" />
+			</arglist>
+			<digest>
+				Reconfigure FFT parameters
+			</digest>
+			<description>
+				The word <m>fft</m>, followed by three ints, gives the FFT length, window length, and overlap (respectively). See explanation of these parameters in the Arguments section. Sending this message will halt processing while the object reconfigures itself; this will cause an audio glitch.
+			</description>
+		</method>
+		<method name="hold">
+			<arglist>
+				<arg name="hold" type="int" optional="0" units="" />
+			</arglist>
+			<digest>
+				Turn audio input off temporarily
+			</digest>
+			<description>
+				The word <m>hold</m>, followed by a 0 or a 1. If 0, play normally. If 1, stop accepting input and allow the sound already in delay lines to recirculate.
+			</description>
+		</method>
+		<method name="maxdel">
+			<arglist>
+				<arg name="maxdel" type="float" optional="0" />
+			</arglist>
+			<digest>
+				Set the maximum delay time
+			</digest>
+			<description>
+				The word <m>maxdel</m>, followed by a float giving the maximum number of seconds for the delay lines.
+			</description>
+		</method>
+		<method name="posteq">
+			<arglist>
+				<arg name="posteq" type="int" optional="0" units="" />
+			</arglist>
+			<digest>
+				Set the order of EQ and delay
+			</digest>
+			<description>
+				The word <m>posteq</m>, followed by a 0 or a 1.  If 0, EQ is applied before delay. If 1, EQ is applied after delay, which means it affects sound that is feeding back through the delay lines, even after audio input is silent.
+			</description>
+		</method>
+		<method name="range">
+			<arglist>
+				<arg name="min-freq" type="list" optional="0" units="hz" />
+				<arg name="max-freq" type="list" optional="0" units="hz" />
+			</arglist>
+			<digest>
+				Set the range of frequencies controlled by the EQ list 
+			</digest>
+			<description>
+				The word <m>range</m>, followed by two floats (min and max), which define the frequency range within which the EQ gain (<m>eq</m>) list functions. Giving 0 for max sets the maximum frequency to the Nyquist frequency (half of the sampling rate). By default, the range is 0 Hz to Nyquist. When the frequency range is not the full range, the first value of the EQ gain list controls all the FFT bins from 0 Hz to approximately the lowest value of the frequency range. Similarly, the last value of one of these lists controls all the FFT bins from approimately the highest value of the frequency range to the Nyquist frequency. Note that <m>range</m> is ignored when using the <m>binmap</m> list.
+			</description>
+		</method>
+	</methodlist>
+	<!--ATTRIBUTES-->
+	<!--EXAMPLE-->
+	<examplelist>
+		<example caption="" img="" />
+	</examplelist>
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="bogus">
+			TEXT_HERE
+		</seealso>
+	</seealsolist>
+
+	<misc name="Output">
+		<entry name="signal">
+			<description>
+				Out left outlet: Sample output for the first channel.
+			</description>
+		</entry>
+	</misc>
+</c74object>

@@ -1,0 +1,5 @@
+{
+	"name" : "Auzzie Routing",
+	"type" : "query",
+	"contents" : [ "package:Auzzie", "tag:Routing" ]
+}

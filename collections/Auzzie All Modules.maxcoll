@@ -1,0 +1,5 @@
+{
+	"name" : "Auzzie All Modules",
+	"type" : "query",
+	"contents" : [ "package:Auzzie", "tag:All" ]
+}

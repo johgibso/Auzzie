@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<!--Data marked TEXT_HERE, INLET_TYPE, OUTLET_TYPE, ARG_NAME and ARG_TYPE need to be filled in-->
+<c74object name="az.strum~" module="msp" category="">
+	<digest>
+		Karplus-Strong plucked string instrument
+	</digest>
+	<description>
+			The <o>az.strum~</o> object generates a monophone stream of simulated plucked-string instrument sounds. It models a plectrum of variable thickness.
+	</description>
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">John Gibson</metadata>
+		<metadata name="tag">Audio</metadata>
+		<metadata name="tag">Synthesis</metadata>
+	</metadatalist>
+	<!--INLETS-->
+	<inletlist>
+		<inlet id="0" type="signal/float">
+			<digest>
+				messages
+			</digest>
+			<description>
+				Messages that play notes and adjust their characteristics
+			</description>
+		</inlet>
+	</inletlist>
+	<!--OUTLETS-->
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>
+				Mono signal output
+			</digest>
+			<description>
+				Mono signal containing plucked-string sound
+			</description>
+		</outlet>
+	</outletlist>
+	<!--ARGUMENTS-->
+	<objarglist />
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="bang">
+			<arglist>
+				<arg name="bang" type="bang" optional="" />
+			</arglist>
+			<digest>
+				Trigger a new note
+			</digest>
+			<description>
+				A <m>bang</m> message triggers a new note with the parameters set previously. This new note will cut off any previously sounding note.
+			</description>
+		</method>
+		<method name="float">
+			<arglist>
+				<arg name="frequency" type="float" optional="0" units="hz"/>
+			</arglist>
+			<digest>
+				Trigger a new note with the given frequency
+			</digest>
+			<description>
+				Trigger a new note with the given fundamental frequency. This note
+				will cut off any previously sounding note.
+			</description>
+		</method>
+		<method name="list">
+			<arglist>
+				<arg name="frequency" type="float" optional="0" units="hz" />
+				<arg name="decay" type="float" optional="0" units="ms" />
+				<arg name="squish" type="int" optional="1" units="" />
+			</arglist>
+			<digest>
+				Trigger a new note with frequency, decay, squish
+			</digest>
+			<description>
+				At least two floats, which give a fundamental frequency (Hz) and the decay time (ms). This triggers a single note. An optional third list item is an int that gives the <m>squish</m> value, which models plectrum stiffness.
+			</description>
+		</method>
+		<method name="decay">
+			<arglist>
+				<arg name="decay" type="float" optional="0" units="ms" />
+			</arglist>
+			<digest>
+				Set decay time
+			</digest>
+			<description>
+				The word <m>decay</m>, followed by a float giving the decay time (in milliseconds) of the fundamental frequency. This affects currently sounding and future notes.
+			</description>
+		</method>
+		<method name="freq">
+			<arglist>
+				<arg name="freq" type="float" optional="0" units="hz" />
+			</arglist>
+			<digest>
+				Set fundamental frequency
+			</digest>
+			<description>
+				The word <m>freq</m>, followed by a float giving a fundamental frequency (Hz). This affects currently sounding and future notes.
+			</description>
+		</method>
+		<method name="glide">
+			<arglist>
+				<arg name="glide" type="float" optional="0" units="ms" />
+			</arglist>
+			<digest>
+				Set glide time for frequency changes during a note
+			</digest>
+			<description>
+				The word <m>glide</m>, followed by a float giving the glide time (in milliseconds) for frequency changes after a note has started (using the <m>freq</m> message). This governs the time it takes to ramp smoothly from the previous frequency to the new frequency. Default is zero.
+			</description>
+		</method>
+		<method name="nyqdecay">
+			<arglist>
+				<arg name="nyqdecay" type="float" optional="0" units="" />
+			</arglist>
+			<digest>
+				Set decay time multiplier for Nyquist frequency
+			</digest>
+			<description>
+				The word <m>nyqdecay</m>, followed by a float giving the Nyquist decay multiplier for future notes. The decay time at the Nyquist frequency is the fundamental decay time multiplied by this float. Default is 0.1.
+			</description>
+		</method>
+		<method name="squish">
+			<arglist>
+				<arg name="squish" type="int" optional="0" units="" />
+			</arglist>
+			<digest>
+				Set rigidity of plectrum
+			</digest>
+			<description>
+				The word <m>squish</m>, followed by an int giving the "squish" value of future notes. This value, which must be zero or greater, models the rigidity of the plectrum. The greater the value, the more flexible the plectrum and the more muted the sound. Typical useful values range from 0 to 20.
+			</description>
+		</method>
+	</methodlist>
+	<!--ATTRIBUTES-->
+	<!--EXAMPLE-->
+	<examplelist>
+		<example caption="" img="" />
+	</examplelist>
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="bogus">
+			TEXT_HERE
+		</seealso>
+	</seealsolist>
+	<misc name="Output">
+		<entry name="signal">
+			<description>
+				Mono signal
+			</description>
+		</entry>
+	</misc>
+</c74object>

@@ -1,0 +1,5 @@
+{
+	"name" : "Auzzie",
+	"type" : "filelist",
+	"contents" : [ "1DELAYR.maxsnip", "1SHOTR.maxsnip", "2DELAYR.maxsnip", "AFADR.maxsnip", "AFADR-H.maxsnip", "APLAYR.maxsnip", "BANKR.maxsnip", "CAPTR.maxsnip", "COMBR.maxsnip", "CROSSFADR.maxsnip", "DRIVR.maxsnip", "EQUALIZR.maxsnip", "FMODR.maxsnip", "GATR.maxsnip", "GRANUL8R.maxsnip", "IN.maxsnip", "MIXR.maxsnip", "NOISR.maxsnip", "OUT.maxsnip", "OUT-H.maxsnip", "PANR.maxsnip", "REVERBER8R.maxsnip", "REZFILTR.maxsnip", "REZON8R.maxsnip", "RINGR.maxsnip", "SDELAYR.maxsnip", "STRIKR.maxsnip", "STRUMR.maxsnip", "TREMR.maxsnip", "WAVR.maxsnip" ]
+}

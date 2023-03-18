@@ -1,0 +1,5 @@
+{
+	"name" : "Auzzie Synth",
+	"type" : "query",
+	"contents" : [ "package:Auzzie", "tag:Synth" ]
+}

@@ -1,0 +1,81 @@
+{
+	"pattrstorage" : 	{
+		"name" : "lunarwind-storage",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"notedur" : [ 5000 ],
+					"tempo" : [ 30 ],
+					"reverber8r::roomsize" : [ 0.803937 ],
+					"reverber8r::decaytime" : [ 0.772441 ],
+					"reverber8r::wetdry" : [ 1.0 ],
+					"reverber8r::cutoff" : [ 0.75 ],
+					"mixr::fader1" : [ -15.0 ],
+					"mixr::fader2" : [ -18.0 ],
+					"mixr::fader3" : [ -6.0 ],
+					"mixr::fader4" : [ -6.0 ],
+					"mixr::main" : [ -3.0 ],
+					"mixr::fader1-mute" : [ 0 ],
+					"mixr::fader2-mute" : [ 0 ],
+					"mixr::fader3-mute" : [ 0 ],
+					"mixr::main-mute" : [ 0 ],
+					"mixr::fader4-mute" : [ 0 ],
+					"noisr::Q" : [ 0.92126 ],
+					"noisr::pan" : [ 0.0 ],
+					"noisr::release" : [ 1000.0 ],
+					"noisr::sustain" : [ 1.0 ],
+					"noisr::decay" : [ 500.0 ],
+					"noisr::attack" : [ 500.0 ],
+					"noisr::filter" : [ 1 ],
+					"noisr::color" : [ 1 ],
+					"sdelayr::feedback" : [ 0.362205 ],
+					"sdelayr::wetdry" : [ 1.0 ],
+					"sdelayr::maxtime" : [ 4.0 ],
+					"sdelayr::delaytimes" : [ 0.626, 0.083, 0.694, 0.779, 0.785, 0.693, 0.143, 0.083, 0.215, 0.589, 0.111, 0.736, 0.17, 0.325, 0.076, 0.394, 0.417, 0.064, 0.03, 0.051, 0.102, 0.524, 0.651, 0.69, 0.671, 0.121, 0.999, 0.033, 0.732, 0.558, 0.126, 0.111 ],
+					"sdelayr::rotate" : [ 8.0 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"notedur" : [ 5000 ],
+					"tempo" : [ 30 ],
+					"reverber8r::roomsize" : [ 0.803937 ],
+					"reverber8r::decaytime" : [ 0.772441 ],
+					"reverber8r::wetdry" : [ 1.0 ],
+					"reverber8r::cutoff" : [ 0.748031 ],
+					"mixr::fader1" : [ -15.0 ],
+					"mixr::fader2" : [ -18.0 ],
+					"mixr::fader3" : [ -6.0 ],
+					"mixr::fader4" : [ -6.0 ],
+					"mixr::main" : [ -3.0 ],
+					"mixr::fader1-mute" : [ 0 ],
+					"mixr::fader2-mute" : [ 0 ],
+					"mixr::fader3-mute" : [ 0 ],
+					"mixr::main-mute" : [ 0 ],
+					"mixr::fader4-mute" : [ 0 ],
+					"noisr::Q" : [ 0.92126 ],
+					"noisr::pan" : [ 0.0 ],
+					"noisr::release" : [ 1000.0 ],
+					"noisr::sustain" : [ 1.0 ],
+					"noisr::decay" : [ 500.0 ],
+					"noisr::attack" : [ 500.0 ],
+					"noisr::filter" : [ 0 ],
+					"noisr::color" : [ 0 ],
+					"sdelayr::feedback" : [ 0.362205 ],
+					"sdelayr::wetdry" : [ 1.0 ],
+					"sdelayr::maxtime" : [ 4.0 ],
+					"sdelayr::delaytimes" : [ 0.626, 0.083, 0.694, 0.779, 0.785, 0.693, 0.143, 0.083, 0.215, 0.589, 0.111, 0.736, 0.17, 0.325, 0.076, 0.394, 0.417, 0.064, 0.03, 0.051, 0.102, 0.524, 0.651, 0.69, 0.671, 0.121, 0.999, 0.033, 0.732, 0.558, 0.126, 0.111 ],
+					"sdelayr::rotate" : [ 8.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
