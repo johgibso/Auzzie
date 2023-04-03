@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -398,7 +398,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 403.0, 151.739990000000006, 56.0, 22.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ -50.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -425,7 +425,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "pan or balance (0. - 1.)",
+					"comment" : "pan or balance (0. - 1. | exact float (-50. - 50.))",
 					"id" : "obj-31",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -457,7 +457,7 @@
 					"bgoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"bordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"focusbordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"hint" : "Data received in this inlet sets the value for the pan dial (0. - 1.).",
+					"hint" : "Data received in this inlet sets the value for the pan dial (0. - 1. | exact float (-50. - 50.)).",
 					"id" : "obj-21",
 					"ignoreclick" : 1,
 					"maxclass" : "live.toggle",
@@ -635,6 +635,13 @@
 					"destination" : [ "obj-21", 0 ],
 					"midpoints" : [ 427.5, 137.739990000000006, 446.0, 137.739990000000006, 446.0, 97.739990000000006, 466.0, 97.739990000000006 ],
 					"source" : [ "obj-18", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-18", 1 ]
 				}
 
 			}
