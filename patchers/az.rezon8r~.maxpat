@@ -1387,7 +1387,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "comb filter frequency (0. - 1. | exact float (20-20000 Hz))",
+					"comment" : "lowpass filter frequency (0. - 1. | exact float (20-20000 Hz))",
 					"id" : "obj-59",
 					"index" : 0,
 					"maxclass" : "inlet",
