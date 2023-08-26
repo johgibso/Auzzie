@@ -1,3 +1,7 @@
+v2.0.2 (?/?/23)
+	- Fix problem with BANKR and REZON8R: sometimes the right channel would
+	  not be affected by the processor, due to an initialization bug.
+
 v2.0.1 (4/3/23)
 	- Fix PANR pan value inlet range, and set dial to show pan values the
 	  same way the synth modules do (50L...C...50R). Also support exact keyword.
