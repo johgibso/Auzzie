@@ -1,7 +1,7 @@
 {
 	"name" : "Auzzie",
 	"displayname" : "",
-	"version" : "2.0.1",
+	"version" : "2.0.2",
 	"author" : "John Gibson",
 	"authors" : [  ],
 	"description" : "Auzzie is an easy-to-use audio toolkit modeled on Vizzie.",
