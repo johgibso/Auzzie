@@ -7,7 +7,7 @@ Indiana University Jacobs School of Music
 
 Contact:<br/>
 johgibso@gmail.com<br/>
-[https://cecm.indiana.edu/auzzie]()
+[https://cecm.indiana.edu/auzzie](https://cecm.indiana.edu/auzzie/)
 
 The website above lists common patching pitfalls and known bugs and workarounds for the current version of Auzzie.
 
