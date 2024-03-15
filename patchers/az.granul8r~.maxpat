@@ -6108,24 +6108,10 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"outputmode" : 0,
-					"parameter_enable" : 1,
+					"parameter_enable" : 0,
 					"patching_rect" : [ 29.0, 154.869994999999989, 65.0, 32.260010000000001 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 324.0, 80.146118000000001, 95.0, 22.5 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_initial" : [ 0 ],
-							"parameter_initial_enable" : 1,
-							"parameter_invisible" : 1,
-							"parameter_longname" : "textbutton",
-							"parameter_mmax" : 1.0,
-							"parameter_modmode" : 0,
-							"parameter_shortname" : "textbutton",
-							"parameter_type" : 3
-						}
-
-					}
-,
 					"text" : "play",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"texton" : "stop",
@@ -8936,7 +8922,6 @@
 		"parameters" : 		{
 			"obj-101" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
 			"obj-102" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-106" : [ "textbutton", "textbutton", 0 ],
 			"obj-107" : [ "transposition jitter", "trans jitter", 0 ],
 			"obj-114" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
 			"obj-121" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
