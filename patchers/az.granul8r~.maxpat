@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 2,
+			"minor" : 6,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -49,8 +49,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"minor" : 6,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -362,8 +362,8 @@
 									"id" : "obj-77",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 9,
-									"outlettype" : [ "float", "list", "float", "float", "float", "float", "float", "", "int" ],
+									"numoutlets" : 10,
+									"outlettype" : [ "float", "list", "float", "float", "float", "float", "float", "", "int", "" ],
 									"patching_rect" : [ 111.0, 286.301575000000014, 127.0, 22.0 ],
 									"text" : "info~ #0-buf.1"
 								}
@@ -802,6 +802,7 @@
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_longname" : "soundfile-name[1]",
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "soundfile-name",
 							"parameter_type" : 3
 						}
@@ -898,6 +899,7 @@
 							"parameter_enum" : [ "0", "0" ],
 							"parameter_longname" : "reset-speed",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "reset-speed",
 							"parameter_type" : 2
 						}
@@ -978,6 +980,7 @@
 							"parameter_enum" : [ "R", "R" ],
 							"parameter_longname" : "reset-trans",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "reset-trans",
 							"parameter_type" : 2
 						}
@@ -1028,6 +1031,7 @@
 							"parameter_longname" : "gain",
 							"parameter_mmax" : 12.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -1078,6 +1082,7 @@
 							"parameter_longname" : "transpose",
 							"parameter_mmax" : 48.0,
 							"parameter_mmin" : -48.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "transpose",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -1125,6 +1130,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "output jitter",
 							"parameter_mmax" : 100.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "out jitter",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -1174,6 +1180,7 @@
 							"parameter_longname" : "grain dur",
 							"parameter_mmax" : 400.0,
 							"parameter_mmin" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "grain dur",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -1223,6 +1230,7 @@
 							"parameter_longname" : "grain rate",
 							"parameter_mmax" : 600.0,
 							"parameter_mmin" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "grain rate",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -1316,8 +1324,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"minor" : 6,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1858,6 +1866,7 @@
 							"parameter_enum" : [ "Z", "Z" ],
 							"parameter_longname" : "reset-zoom",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "reset-zoom",
 							"parameter_type" : 2
 						}
@@ -2017,6 +2026,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[10]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -2181,8 +2191,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"minor" : 6,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2802,8 +2812,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"minor" : 6,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3385,8 +3395,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"minor" : 6,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3704,6 +3714,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_longname" : "waveform-cursor-mode",
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "wf-cursor-mode",
 							"parameter_type" : 3
 						}
@@ -3808,6 +3819,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[9]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -3880,6 +3892,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "transposition jitter",
 							"parameter_mmax" : 48.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "trans jitter",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -4011,6 +4024,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "stereo width",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "width",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -4079,6 +4093,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "amp jitter",
 							"parameter_mmax" : 36.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "amp jitter",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -4177,6 +4192,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[8]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -4265,6 +4281,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[7]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -4353,6 +4370,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[6]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -4439,6 +4457,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "input jitter",
 							"parameter_mmax" : 2000.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "in jitter",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -4628,6 +4647,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[5]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -4716,6 +4736,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[4]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -4777,8 +4798,19 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
+					"parameter_enable" : 1,
 					"patching_rect" : [ 2220.0, 214.698424999999986, 50.0, 22.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_invisible" : 1,
+							"parameter_longname" : "flonum[1]",
+							"parameter_modmode" : 0,
+							"parameter_shortname" : "flonum[1]",
+							"parameter_type" : 3
+						}
+
+					}
+,
 					"varname" : "flonum[1]"
 				}
 
@@ -4855,6 +4887,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[26]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -5066,6 +5099,7 @@
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_longname" : "window-start",
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "window-start",
 							"parameter_type" : 3
 						}
@@ -5102,6 +5136,7 @@
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_longname" : "window-end",
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "window-end",
 							"parameter_type" : 3
 						}
@@ -5215,6 +5250,7 @@
 							"parameter_enum" : [ "R", "R" ],
 							"parameter_longname" : "reset-loop",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "reset-loop",
 							"parameter_type" : 2
 						}
@@ -5296,6 +5332,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[3]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -5375,8 +5412,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"minor" : 6,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5889,6 +5926,7 @@
 							"parameter_longname" : "speed-high",
 							"parameter_mmax" : 8.0,
 							"parameter_mmin" : -8.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "speed",
 							"parameter_speedlim" : 0.0,
 							"parameter_type" : 0,
@@ -5927,6 +5965,7 @@
 							"parameter_invisible" : 1,
 							"parameter_longname" : "lowhigh",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "lowhigh",
 							"parameter_type" : 3
 						}
@@ -5978,6 +6017,7 @@
 							"parameter_longname" : "speed-low",
 							"parameter_mmax" : 1.0,
 							"parameter_mmin" : -1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "speed",
 							"parameter_speedlim" : 0.0,
 							"parameter_type" : 0,
@@ -6079,6 +6119,7 @@
 							"parameter_invisible" : 1,
 							"parameter_longname" : "textbutton",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "textbutton",
 							"parameter_type" : 3
 						}
@@ -6146,6 +6187,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[2]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -6207,6 +6249,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[1]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -6268,6 +6311,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[280]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -6329,6 +6373,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[281]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -6390,6 +6435,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[282]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -6451,6 +6497,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[283]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -6512,6 +6559,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[284]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -8903,6 +8951,7 @@
 			"obj-16" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
 			"obj-165" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
 			"obj-171" : [ "pictctrl[26]", "pictctrl[1]", 0 ],
+			"obj-175" : [ "flonum[1]", "flonum[1]", 0 ],
 			"obj-179" : [ "reset-trans", "reset-trans", 0 ],
 			"obj-190" : [ "input jitter", "in jitter", 0 ],
 			"obj-202" : [ "output jitter", "out jitter", 0 ],
