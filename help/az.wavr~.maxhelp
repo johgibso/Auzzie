@@ -108,7 +108,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 59.0, 217.5, 277.0, 37.0 ],
-					"text" : "This packs the MIDI note number and velocity into a list, which is what NOISR wants to see."
+					"text" : "This packs the MIDI note number and velocity into a list, which is what WAVR wants to see."
 				}
 
 			}
