@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 1,
+			"minor" : 5,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -280,8 +280,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 5,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -595,8 +595,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 5,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -803,8 +803,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 5,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1011,8 +1011,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 5,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1439,8 +1439,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 5,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2134,8 +2134,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 5,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2844,7 +2844,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"outlettype" : [ "multichannelsignal", "", "" ],
 					"patching_rect" : [ 141.0, 75.006989000000004, 120.0, 22.0 ],
 					"text" : "az.audio-left-handler"
 				}
@@ -3868,28 +3868,28 @@
 			}
 , 			{
 				"name" : "az.audio-left-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/auzzie/patchers/utils",
+				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "az.data-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/auzzie/patchers/utils",
+				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "az.sub-comb-voice~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/auzzie/patchers/poly",
+				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/poly",
 				"patcherrelativepath" : "./poly",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "az.sub-xfade~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/auzzie/patchers/sub",
+				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
 				"patcherrelativepath" : "./sub",
 				"type" : "JSON",
 				"implicit" : 1
