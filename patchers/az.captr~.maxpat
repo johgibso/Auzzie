@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 2,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -122,13 +122,9 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 873.0, 204.739990000000006, 37.0, 75.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 49.0, 38.0, 91.0 ],
+					"presentation_rect" : [ 6.0, 49.0, 38.0, 91.0 ],
 					"saved_attribute_attributes" : 					{
 						"modulationcolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -146,6 +142,7 @@
 							"parameter_longname" : "gain",
 							"parameter_mmax" : 12.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -153,7 +150,6 @@
 
 					}
 ,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"tricolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"trioncolor" : [ 1.0, 1.0, 1.0, 0.701961 ],
 					"varname" : "gain-fader",
@@ -164,7 +160,6 @@
 , 			{
 				"box" : 				{
 					"activedialcolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
-					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"hint" : "Sets the maximum recording duration [msec].",
 					"id" : "obj-23",
 					"maxclass" : "live.dial",
@@ -174,17 +169,9 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 728.0, 204.739990000000006, 52.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 54.974808000000003, 49.0, 47.0, 48.0 ],
+					"presentation_rect" : [ 54.0, 49.0, 47.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"activedialcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activeneedlecolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -194,6 +181,7 @@
 							"parameter_longname" : "duration",
 							"parameter_mmax" : 10000.0,
 							"parameter_mmin" : 1000.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "duration",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0
@@ -201,7 +189,6 @@
 
 					}
 ,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"varname" : "duration-dial"
 				}
 
@@ -301,8 +288,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -831,8 +818,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1098,7 +1085,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.609558, 335.771027000000004, 46.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.474808, 18.0, 45.0, 17.0 ],
+					"presentation_rect" : [ 2.0, 18.0, 45.0, 17.0 ],
 					"text" : "CAPTR",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -1155,7 +1142,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 358.0, 710.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.5, 155.007019000000014, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 4.0, 155.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -1188,6 +1175,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[8]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -1213,7 +1201,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 379.0, 598.770995999999968, 40.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 118.0, 120.006989000000004, 56.0, 18.0 ],
+					"presentation_rect" : [ 117.0, 120.0, 56.0, 18.0 ],
 					"text" : "send",
 					"textcolor" : [ 1.0, 1.0, 1.0, 0.85 ],
 					"texton" : "send",
@@ -1285,7 +1273,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 573.0, 250.5, 59.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 118.0, 50.006988999999997, 56.0, 32.0 ],
+					"presentation_rect" : [ 117.0, 50.0, 56.0, 32.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0 ],
@@ -1293,6 +1281,7 @@
 							"parameter_invisible" : 1,
 							"parameter_longname" : "record",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "record",
 							"parameter_type" : 3
 						}
@@ -1339,7 +1328,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1124.5, 83.006989000000004, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 436.5, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 436.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -1372,6 +1361,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[3]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -1467,7 +1457,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1018.0, 248.0, 52.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 52.974808000000003, 120.006989000000004, 51.0, 18.0 ],
+					"presentation_rect" : [ 52.0, 120.0, 51.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0 ],
@@ -1475,6 +1465,7 @@
 							"parameter_invisible" : 1,
 							"parameter_longname" : "autosend",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "autosend",
 							"parameter_type" : 3
 						}
@@ -1521,7 +1512,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 679.5, 83.006989000000004, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 113.0, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 112.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -1554,6 +1545,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[2]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -1644,8 +1636,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 2,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1892,7 +1884,7 @@
 					"outmode" : 0,
 					"patching_rect" : [ 116.0, 368.271027000000004, 256.0, 82.270995999999997 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 182.0, 50.0, 257.0, 88.0 ],
+					"presentation_rect" : [ 181.0, 50.0, 257.0, 88.0 ],
 					"quiet" : 1,
 					"selectioncolor" : [ 0.211765, 0.701961, 0.878431, 0.6 ],
 					"setmode" : 1,
@@ -1946,7 +1938,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 987.0, 83.506989000000004, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 329.0, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 328.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -1979,6 +1971,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[7]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -2104,7 +2097,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 33.109558, 35.006988999999997, 42.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.474808, 0.0, 36.0, 17.0 ],
+					"presentation_rect" : [ 1.0, 0.0, 36.0, 17.0 ],
 					"text" : "Audio",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -2189,7 +2182,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 842.0, 82.006989000000004, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 221.0, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 220.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -2222,6 +2215,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[4]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -2243,7 +2237,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.609558, 89.739990000000006, 64.0, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 16.0, 500.268768000000023, 19.0 ],
+					"presentation_rect" : [ -1.0, 16.0, 500.268768000000023, 19.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -2260,7 +2254,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.609558, 22.006989000000001, 64.0, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 0.0, 500.268768000000023, 17.0 ],
+					"presentation_rect" : [ -1.0, 0.0, 500.268768000000023, 17.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -2277,41 +2271,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.609558, 303.569457999999997, 64.0, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 152.0, 500.268768000000023, 35.433025000000001 ],
-					"proportion" : 0.39,
-					"rounded" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 0.0,
-					"bgcolor" : [ 0.137255, 0.145098, 0.160784, 0.65 ],
-					"id" : "obj-112",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 21.609558, 232.0, 64.0, 64.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 34.0, 500.268768000000023, 148.433029000000005 ],
-					"proportion" : 0.39,
-					"rounded" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 0.0,
-					"bgcolor" : [ 0.367404, 0.389405, 0.430238, 1.0 ],
-					"id" : "obj-113",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 21.609558, 159.498412999999999, 64.0, 64.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 16.0, 506.268768000000023, 158.433029000000005 ],
+					"presentation_rect" : [ -1.0, 152.0, 500.268768000000023, 35.433025000000001 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -3040,24 +3000,16 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "az.audio-left-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "./utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.data-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "./utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
 		"autosave" : 0,
 		"patchlinecolor" : [ 0.011765, 0.396078, 0.752941, 0.9 ],
-		"bgcolor" : [ 0.710233, 0.718895, 0.728046, 1.0 ]
+		"bgcolor" : [ 0.529411764705882, 0.529411764705882, 0.529411764705882, 1.0 ],
+		"saved_attribute_attributes" : 		{
+			"locked_bgcolor" : 			{
+				"expression" : "themecolor.live_surface_bg"
+			}
+
+		}
+
 	}
 
 }

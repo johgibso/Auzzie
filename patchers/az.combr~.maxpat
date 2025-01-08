@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 434.0, 313.0, 191.0, 112.0 ],
+		"rect" : [ 435.0, 313.0, 191.0, 112.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -64,7 +64,6 @@
 , 			{
 				"box" : 				{
 					"activedialcolor" : [ 0.184, 0.741, 0.0, 1.0 ],
-					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"hint" : "Crossfades between the unaffected and comb-filtered audio.",
 					"id" : "obj-3",
 					"maxclass" : "live.dial",
@@ -74,17 +73,9 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 921.0, 200.576447000000002, 44.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 134.474807999999996, 41.0, 51.0, 48.0 ],
+					"presentation_rect" : [ 133.0, 41.0, 51.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"activedialcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activeneedlecolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -93,6 +84,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "wetdry",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "wetdry",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -100,7 +92,6 @@
 
 					}
 ,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"varname" : "wetdry-dial[1]"
 				}
 
@@ -108,7 +99,6 @@
 , 			{
 				"box" : 				{
 					"activedialcolor" : [ 0.184, 0.741, 0.0, 1.0 ],
-					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"hint" : "Sets the lowpass filter cutoff frequency (in Hz).",
 					"id" : "obj-4",
 					"maxclass" : "live.dial",
@@ -118,17 +108,9 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 756.75, 200.576447000000002, 44.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 91.474807999999996, 41.0, 51.0, 48.0 ],
+					"presentation_rect" : [ 90.0, 41.0, 51.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"activedialcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activeneedlecolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -139,6 +121,7 @@
 							"parameter_longname" : "cutoff",
 							"parameter_mmax" : 20000.0,
 							"parameter_mmin" : 20.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "cutoff",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0
@@ -146,7 +129,6 @@
 
 					}
 ,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"varname" : "cutoff-dial"
 				}
 
@@ -154,7 +136,6 @@
 , 			{
 				"box" : 				{
 					"activedialcolor" : [ 0.184, 0.741, 0.0, 1.0 ],
-					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"hint" : "Sets the comb filter frequency (in Hz).",
 					"id" : "obj-5",
 					"maxclass" : "live.dial",
@@ -164,17 +145,9 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 390.0, 204.576447000000002, 44.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.474808, 41.0, 51.0, 48.0 ],
+					"presentation_rect" : [ 4.0, 41.0, 51.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"activedialcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activeneedlecolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -185,6 +158,7 @@
 							"parameter_longname" : "freq[1]",
 							"parameter_mmax" : 20000.0,
 							"parameter_mmin" : 20.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "freq",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -192,7 +166,6 @@
 
 					}
 ,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"varname" : "frequency-dial[1]"
 				}
 
@@ -200,7 +173,6 @@
 , 			{
 				"box" : 				{
 					"activedialcolor" : [ 0.184, 0.741, 0.0, 1.0 ],
-					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"hint" : "Sets the comb filter feedback.",
 					"id" : "obj-6",
 					"maxclass" : "live.dial",
@@ -210,17 +182,9 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 580.0, 200.576447000000002, 54.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 48.474808000000003, 41.0, 51.0, 48.0 ],
+					"presentation_rect" : [ 47.0, 41.0, 51.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"activedialcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activeneedlecolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -231,6 +195,7 @@
 							"parameter_longname" : "feedback",
 							"parameter_mmax" : 1.0,
 							"parameter_mmin" : -1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "feedback",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -238,7 +203,6 @@
 
 					}
 ,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"varname" : "feedback-dial[1]"
 				}
 
@@ -270,8 +234,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -478,8 +442,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -679,8 +643,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -887,8 +851,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1175,7 +1139,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1034.0, 75.006989000000004, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 177.0, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 176.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -1208,6 +1172,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[3]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -1298,7 +1263,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 851.0, 75.006989000000004, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 134.0, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 133.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -1331,6 +1296,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[2]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl",
 							"parameter_type" : 2
 						}
@@ -1510,8 +1476,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1648,7 +1614,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "multichannelsignal" ],
 									"patching_rect" : [ 31.0, 23.0, 30.0, 30.0 ]
 								}
 
@@ -1817,7 +1783,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 693.0, 75.006989000000004, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 91.0, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 90.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -1850,6 +1816,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[1]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -1881,7 +1848,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"outlettype" : [ "multichannelsignal", "", "" ],
 					"patching_rect" : [ 141.0, 75.006989000000004, 120.0, 22.0 ],
 					"text" : "az.audio-left-handler"
 				}
@@ -1919,7 +1886,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 503.0, 75.006989000000004, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 48.0, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 47.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -1952,6 +1919,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl",
 							"parameter_type" : 2
 						}
@@ -2011,7 +1979,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 34.109558, 154.498412999999999, 41.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.474808, 95.0, 46.0, 17.0 ],
+					"presentation_rect" : [ 2.0, 95.0, 46.0, 17.0 ],
 					"text" : "Audio",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -2028,7 +1996,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 34.109558, 27.863524999999999, 41.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.474808, 0.0, 41.0, 17.0 ],
+					"presentation_rect" : [ 2.0, 0.0, 41.0, 17.0 ],
 					"text" : "Audio",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -2045,7 +2013,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 29.609558, 330.771027000000004, 52.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.474808, 18.0, 53.0, 17.0 ],
+					"presentation_rect" : [ 2.0, 18.0, 53.0, 17.0 ],
 					"text" : "COMBR",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -2069,7 +2037,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 277.0, 75.006989000000004, 40.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 16.0, 191.896483999999987, 19.0 ],
+					"presentation_rect" : [ -1.0, 16.0, 191.896483999999987, 19.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 1 ],
@@ -2077,6 +2045,7 @@
 							"parameter_invisible" : 1,
 							"parameter_longname" : "onoff",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "onoff",
 							"parameter_type" : 3
 						}
@@ -2105,7 +2074,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 29.609558, 84.739990000000006, 64.0, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 16.0, 437.268768000000023, 19.0 ],
+					"presentation_rect" : [ -1.0, 16.0, 437.268768000000023, 19.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -2122,7 +2091,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 29.609558, 17.006989000000001, 64.0, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 0.0, 437.268768000000023, 17.0 ],
+					"presentation_rect" : [ -1.0, 0.0, 437.268768000000023, 17.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -2139,42 +2108,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 29.609558, 298.569457999999997, 64.0, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 95.0, 437.268768000000023, 35.433025000000001 ],
+					"presentation_rect" : [ -1.0, 95.0, 437.268768000000023, 35.433025000000001 ],
 					"proportion" : 0.39,
 					"rounded" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 0.0,
-					"bgcolor" : [ 0.137255, 0.145098, 0.160784, 0.65 ],
-					"id" : "obj-112",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 29.609558, 227.0, 64.0, 64.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 34.0, 437.268768000000023, 96.433029000000005 ],
-					"proportion" : 0.39,
-					"rounded" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 0.0,
-					"bgcolor" : [ 0.367404, 0.389405, 0.430238, 1.0 ],
-					"id" : "obj-113",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 29.609558, 154.498412999999999, 64.0, 64.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 16.0, 437.268768000000023, 114.433029000000005 ],
-					"proportion" : 0.39
 				}
 
 			}
@@ -2581,30 +2517,15 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "az.audio-left-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/auzzie/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.data-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/auzzie/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-xfade~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/auzzie/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
 		"autosave" : 0,
-		"bgcolor" : [ 0.5, 0.8, 0.5, 1.0 ]
+		"bgcolor" : [ 0.529411764705882, 0.529411764705882, 0.529411764705882, 1.0 ],
+		"saved_attribute_attributes" : 		{
+			"locked_bgcolor" : 			{
+				"expression" : "themecolor.live_surface_bg"
+			}
+
+		}
+
 	}
 
 }

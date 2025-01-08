@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 509.0, 256.0, 186.0, 103.0 ],
+		"rect" : [ 526.0, 241.0, 186.0, 103.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -70,7 +70,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 114.5, 437.863524999999981, 49.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.474808, 18.0, 49.0, 17.0 ],
+					"presentation_rect" : [ 2.0, 18.0, 49.0, 17.0 ],
 					"text" : "AFADR-H",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -99,7 +99,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.5, 462.201538000000028, 34.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.474808, 103.0, 34.0, 17.0 ],
+					"presentation_rect" : [ 2.0, 103.0, 34.0, 17.0 ],
 					"text" : "Audio",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -116,7 +116,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 324.0, 430.0, 64.0, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 103.0, 270.268768000000023, 35.433024999999986 ],
+					"presentation_rect" : [ -1.0, 103.0, 270.268768000000023, 35.433024999999986 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -139,7 +139,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 422.0, 116.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 157.0, 74.0, 15.0, 15.0 ],
+					"presentation_rect" : [ 156.0, 74.0, 15.0, 15.0 ],
 					"rounded" : 100.0,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -148,6 +148,7 @@
 							"parameter_invisible" : 1,
 							"parameter_longname" : "textbutton[1]",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "textbutton",
 							"parameter_type" : 3
 						}
@@ -211,13 +212,9 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 37.0, 228.0, 136.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 51.0, 156.0, 30.0 ],
+					"presentation_rect" : [ 14.0, 51.0, 156.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"modulationcolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -235,6 +232,7 @@
 							"parameter_longname" : "output",
 							"parameter_mmax" : 12.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "output",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -243,7 +241,6 @@
 					}
 ,
 					"showname" : 0,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"tricolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"trioncolor" : [ 0.796078, 0.262745, 0.345098, 1.0 ],
 					"varname" : "mc.live.gain~"
@@ -275,7 +272,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 190.390380999999991, 437.863524999999981, 22.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.974807999999999, 44.863525000000003, 166.0, 48.000000000000007 ],
+					"presentation_rect" : [ 9.0, 45.0, 166.0, 48.000000000000007 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -292,7 +289,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 48.5, 437.863524999999981, 34.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.5, 0.0, 34.0, 17.0 ],
+					"presentation_rect" : [ 2.0, 0.0, 34.0, 17.0 ],
 					"text" : "Audio",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -310,8 +307,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -577,7 +574,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 348.5, 78.5, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 172.0, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 171.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -610,6 +607,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[284]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -631,7 +629,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 107.0, 430.0, 64.0, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 16.0, 270.268768000000023, 19.0 ],
+					"presentation_rect" : [ -1.0, 16.0, 270.268768000000023, 19.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -648,42 +646,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 37.0, 430.0, 64.0, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 0.0, 270.268768000000023, 17.0 ],
+					"presentation_rect" : [ -1.0, 0.0, 270.268768000000023, 17.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 0.0,
-					"bgcolor" : [ 0.137255, 0.145098, 0.160784, 0.65 ],
-					"id" : "obj-112",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 251.0, 430.0, 64.0, 64.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 34.0, 270.268768000000023, 84.433043999999995 ],
-					"proportion" : 0.39,
-					"rounded" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 0.0,
-					"bgcolor" : [ 0.367404, 0.389405, 0.430238, 1.0 ],
-					"id" : "obj-81",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 180.390380999999991, 430.0, 64.0, 64.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 16.0, 270.268768000000023, 112.433043999999995 ],
-					"proportion" : 0.39
 				}
 
 			}
@@ -830,23 +795,15 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "az.audio-left-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "./utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.data-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "./utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
 		"autosave" : 0,
-		"bgcolor" : [ 0.8, 0.501961, 0.501961, 1.0 ]
+		"bgcolor" : [ 0.529411764705882, 0.529411764705882, 0.529411764705882, 1.0 ],
+		"saved_attribute_attributes" : 		{
+			"locked_bgcolor" : 			{
+				"expression" : "themecolor.live_surface_bg"
+			}
+
+		}
+
 	}
 
 }

@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 1,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -50,7 +50,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 1,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -856,7 +856,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 316.0, 192.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 42.0, 55.792236000000003, 10.0, 10.0 ],
+					"presentation_rect" : [ 41.0, 56.0, 10.0, 10.0 ],
 					"rounded" : 20.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -937,7 +937,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1772.0, 177.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 241.666626000000008, 55.792236000000003, 10.0, 10.0 ],
+					"presentation_rect" : [ 241.0, 56.0, 10.0, 10.0 ],
 					"rounded" : 20.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -1007,13 +1007,9 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 29.0, 633.5, 36.0, 63.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 276.666626000000008, 42.792236000000003, 34.0, 78.0 ],
+					"presentation_rect" : [ 276.0, 43.0, 34.0, 78.0 ],
 					"saved_attribute_attributes" : 					{
 						"modulationcolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -1039,7 +1035,6 @@
 
 					}
 ,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"tricolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"trioncolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"varname" : "gain-fader"
@@ -1049,7 +1044,6 @@
 , 			{
 				"box" : 				{
 					"activedialcolor" : [ 0.796, 0.263, 0.344, 1.0 ],
-					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"annotation" : "",
 					"appearance" : 1,
 					"hint" : "Sets the grain transposition (in semitones).",
@@ -1061,18 +1055,10 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1811.0, 214.698424999999986, 56.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 217.242554000000013, 42.792236000000003, 54.0, 36.0 ],
+					"presentation_rect" : [ 216.0, 43.0, 54.0, 36.0 ],
 					"prototypename" : "freq",
 					"saved_attribute_attributes" : 					{
 						"activedialcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activeneedlecolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -1090,7 +1076,6 @@
 
 					}
 ,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"varname" : "transpose-dial"
 				}
 
@@ -1098,7 +1083,6 @@
 , 			{
 				"box" : 				{
 					"activedialcolor" : [ 0.796, 0.263, 0.344, 1.0 ],
-					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"annotation" : "",
 					"appearance" : 1,
 					"hint" : "Sets the output jitter: how much randomness to apply to the grain output rate.",
@@ -1110,18 +1094,10 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1406.0, 214.698424999999986, 46.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 112.133223999999998, 83.896118000000001, 44.266449000000001, 36.0 ],
+					"presentation_rect" : [ 111.0, 84.0, 44.266449000000001, 36.0 ],
 					"prototypename" : "freq",
 					"saved_attribute_attributes" : 					{
 						"activedialcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activeneedlecolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -1138,7 +1114,6 @@
 
 					}
 ,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"varname" : "output-jitter-dial"
 				}
 
@@ -1146,7 +1121,6 @@
 , 			{
 				"box" : 				{
 					"activedialcolor" : [ 0.796, 0.263, 0.344, 1.0 ],
-					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"annotation" : "",
 					"appearance" : 1,
 					"hint" : "Sets the grain output duration (in msec).",
@@ -1158,18 +1132,10 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1138.0, 214.698424999999986, 48.5, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.267989999999998, 83.896118000000001, 50.0, 36.0 ],
+					"presentation_rect" : [ 58.0, 84.0, 50.0, 36.0 ],
 					"prototypename" : "freq",
 					"saved_attribute_attributes" : 					{
 						"activedialcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activeneedlecolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -1188,7 +1154,6 @@
 
 					}
 ,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"varname" : "grain-duration-dial"
 				}
 
@@ -1196,7 +1161,6 @@
 , 			{
 				"box" : 				{
 					"activedialcolor" : [ 0.796, 0.263, 0.344, 1.0 ],
-					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"annotation" : "",
 					"appearance" : 1,
 					"hint" : "Sets the grain output rate (in Hz).",
@@ -1208,18 +1172,10 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1000.0, 214.698424999999986, 50.5, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.267989999999998, 42.792236000000003, 50.0, 36.0 ],
+					"presentation_rect" : [ 58.0, 43.0, 50.0, 36.0 ],
 					"prototypename" : "freq",
 					"saved_attribute_attributes" : 					{
 						"activedialcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activeneedlecolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -1238,7 +1194,6 @@
 
 					}
 ,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"varname" : "grain-rate-dial"
 				}
 
@@ -1325,7 +1280,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 1,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1823,7 +1778,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1177.5, 473.877808000000016, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 11.523849, 110.5, 17.0, 17.0 ],
+					"presentation_rect" : [ 11.0, 111.0, 17.0, 17.0 ],
 					"rounded" : 20.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -1993,7 +1948,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 2197.25, 98.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 359.25, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 358.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -2192,7 +2147,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 1,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2813,7 +2768,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 1,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3396,7 +3351,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 1,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3706,7 +3661,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1101.0, 469.877808000000016, 57.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 362.0, 109.5, 57.0, 17.0 ],
+					"presentation_rect" : [ 361.0, 110.0, 57.0, 17.0 ],
 					"rightvalue" : 2,
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -3736,9 +3691,16 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2269.0, 417.432861000000003, 81.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 318.666626000000008, 40.0, 84.0, 18.0 ],
+					"presentation_rect" : [ 318.0, 40.0, 84.0, 18.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "grain envelope",
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ]
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -3761,7 +3723,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2220.0, 443.432861000000003, 95.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 324.0, 55.792236000000003, 95.0, 16.0 ],
+					"presentation_rect" : [ 323.0, 56.0, 95.0, 16.0 ],
 					"rightvalue" : 4,
 					"topvalue" : 0,
 					"varname" : "pictslider"
@@ -3786,7 +3748,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 2056.25, 98.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 329.25, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 328.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -3860,7 +3822,6 @@
 , 			{
 				"box" : 				{
 					"activedialcolor" : [ 0.796, 0.263, 0.344, 1.0 ],
-					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"annotation" : "",
 					"appearance" : 1,
 					"hint" : "Sets the transposition jitter: how much randomness to apply to the grain transposition (in semitones).",
@@ -3872,18 +3833,10 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1949.0, 214.698424999999986, 63.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 217.242554000000013, 83.896118000000001, 54.121291999999997, 36.0 ],
+					"presentation_rect" : [ 216.0, 84.0, 54.121291999999997, 36.0 ],
 					"prototypename" : "freq",
 					"saved_attribute_attributes" : 					{
 						"activedialcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activeneedlecolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -3900,7 +3853,6 @@
 
 					}
 ,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"varname" : "transposition-jitter-dial"
 				}
 
@@ -3992,7 +3944,6 @@
 , 			{
 				"box" : 				{
 					"activedialcolor" : [ 0.796, 0.263, 0.344, 1.0 ],
-					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"annotation" : "",
 					"appearance" : 1,
 					"hint" : "Sets the stereo width.",
@@ -4004,18 +3955,10 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1676.0, 214.698424999999986, 36.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 164.25, 83.896118000000001, 36.0, 36.0 ],
+					"presentation_rect" : [ 163.0, 84.0, 36.0, 36.0 ],
 					"prototypename" : "freq",
 					"saved_attribute_attributes" : 					{
 						"activedialcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activeneedlecolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -4032,7 +3975,6 @@
 
 					}
 ,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"varname" : "stereo-width-dial"
 				}
 
@@ -4061,7 +4003,6 @@
 , 			{
 				"box" : 				{
 					"activedialcolor" : [ 0.796, 0.263, 0.344, 1.0 ],
-					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"annotation" : "",
 					"appearance" : 1,
 					"hint" : "Sets the grain amp jitter: how much randomness to apply to the amplitude of grains (in dB).",
@@ -4073,18 +4014,10 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1541.0, 214.698424999999986, 51.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 164.25, 42.792236000000003, 50.0, 36.0 ],
+					"presentation_rect" : [ 163.0, 43.0, 50.0, 36.0 ],
 					"prototypename" : "freq",
 					"saved_attribute_attributes" : 					{
 						"activedialcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activeneedlecolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -4101,7 +4034,6 @@
 
 					}
 ,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"varname" : "amp-jitter-dial"
 				}
 
@@ -4159,7 +4091,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1918.25, 98.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 300.25, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 299.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -4248,7 +4180,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1783.25, 98.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 270.25, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 269.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -4337,7 +4269,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1648.25, 98.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 241.25, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 240.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -4425,7 +4357,6 @@
 , 			{
 				"box" : 				{
 					"activedialcolor" : [ 0.796, 0.263, 0.344, 1.0 ],
-					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"annotation" : "",
 					"appearance" : 1,
 					"hint" : "Sets the input jitter: how much randomness to apply to the sound file input position.",
@@ -4437,18 +4368,10 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1272.0, 214.698424999999986, 64.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 112.133223999999998, 42.792236000000003, 44.0, 36.0 ],
+					"presentation_rect" : [ 111.0, 43.0, 44.0, 36.0 ],
 					"prototypename" : "freq",
 					"saved_attribute_attributes" : 					{
 						"activedialcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activeneedlecolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -4465,7 +4388,6 @@
 
 					}
 ,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"varname" : "input-jitter-dial"
 				}
 
@@ -4614,7 +4536,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1513.25, 98.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 211.25, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 210.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -4703,7 +4625,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1379.25, 98.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 182.25, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 181.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -4854,7 +4776,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 2330.0, 98.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 387.666626000000008, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 387.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -5207,7 +5129,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 564.0, 294.363585999999998, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 33.5, 110.5, 17.0, 17.0 ],
+					"presentation_rect" : [ 33.0, 111.0, 17.0, 17.0 ],
 					"rounded" : 20.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -5274,7 +5196,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 409.5, 621.622192000000041, 117.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 13.0, 162.792236000000003, 406.0, 18.0 ],
+					"presentation_rect" : [ 12.0, 163.0, 406.0, 18.0 ],
 					"text" : "Drop a sound here",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
@@ -5299,7 +5221,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 251.0, 768.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 417.523865000000001, 228.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 417.0, 228.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -5413,7 +5335,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 1,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5893,7 +5815,6 @@
 , 			{
 				"box" : 				{
 					"activedialcolor" : [ 0.796, 0.263, 0.344, 1.0 ],
-					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"annotation" : "",
 					"hidden" : 1,
 					"hint" : "Control the playback speed and direction. Negative values play the sound backwards.",
@@ -5905,18 +5826,10 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 415.0, 410.432861000000003, 55.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 42.792236000000003, 44.0, 48.0 ],
+					"presentation_rect" : [ 3.0, 43.0, 44.0, 48.0 ],
 					"prototypename" : "freq",
 					"saved_attribute_attributes" : 					{
 						"activedialcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activeneedlecolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -5935,7 +5848,6 @@
 
 					}
 ,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"varname" : "speed-high-dial"
 				}
 
@@ -5957,7 +5869,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 285.96875, 280.0, 40.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.5, 91.0, 26.0, 15.792236000000001 ],
+					"presentation_rect" : [ 12.0, 91.0, 26.0, 15.792236000000001 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0 ],
@@ -5985,7 +5897,6 @@
 , 			{
 				"box" : 				{
 					"activedialcolor" : [ 0.796, 0.263, 0.344, 1.0 ],
-					"activeneedlecolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"annotation" : "",
 					"hint" : "Control the playback speed and direction. Negative values play the sound backwards.",
 					"id" : "obj-127",
@@ -5996,18 +5907,10 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 354.0, 410.432861000000003, 55.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 4.0, 42.792236000000003, 44.0, 48.0 ],
+					"presentation_rect" : [ 3.0, 43.0, 44.0, 48.0 ],
 					"prototypename" : "freq",
 					"saved_attribute_attributes" : 					{
 						"activedialcolor" : 						{
-							"expression" : ""
-						}
-,
-						"activeneedlecolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -6026,7 +5929,6 @@
 
 					}
 ,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"varname" : "speed-low-dial"
 				}
 
@@ -6111,7 +6013,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 29.0, 154.869994999999989, 65.0, 32.260010000000001 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 324.0, 80.146118000000001, 95.0, 22.5 ],
+					"presentation_rect" : [ 323.0, 80.0, 95.0, 22.5 ],
 					"text" : "play",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"texton" : "stop",
@@ -6140,7 +6042,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 466.5, 68.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 4.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -6202,7 +6104,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1105.0, 98.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 122.896698000000001, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 122.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -6264,7 +6166,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 2461.3125, 98.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 417.523865000000001, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 417.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -6326,7 +6228,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1245.25, 98.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 152.523865000000001, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 152.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -6388,7 +6290,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 919.6875, 98.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 92.523848999999998, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 92.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -6450,7 +6352,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 733.5625, 98.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 62.523848999999998, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 62.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -6512,7 +6414,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 598.5, 98.0, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 34.0, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 33.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -6571,7 +6473,7 @@
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
 					"patching_rect" : [ 852.5, 577.5, 190.0, 67.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 13.0, 129.633972, 406.0, 84.0 ],
+					"presentation_rect" : [ 12.0, 130.0, 406.0, 84.0 ],
 					"ruler" : 0,
 					"selectioncolor" : [ 0.74902, 0.415686, 0.588235, 0.6 ],
 					"setmode" : 3,
@@ -6591,7 +6493,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 457.19598400000001, 718.0, 34.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.474808, 225.0, 44.0, 17.0 ],
+					"presentation_rect" : [ 2.0, 225.0, 44.0, 17.0 ],
 					"text" : "Audio",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -6608,7 +6510,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 588.305603000000019, 752.0, 61.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.474808, 18.0, 66.0, 17.0 ],
+					"presentation_rect" : [ 2.0, 18.0, 66.0, 17.0 ],
 					"text" : "GRANUL8R",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -6625,7 +6527,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 373.305603000000019, 718.0, 64.0, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 16.0, 586.268798999999944, 19.0 ],
+					"presentation_rect" : [ -1.0, 16.0, 586.268798999999944, 19.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -6642,7 +6544,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 302.305603000000019, 718.0, 64.0, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 0.0, 586.268798999999944, 17.0 ],
+					"presentation_rect" : [ -1.0, 0.0, 586.268798999999944, 17.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -6659,42 +6561,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 588.305603000000019, 718.0, 64.0, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 225.0, 586.268798999999944, 35.433025000000001 ],
+					"presentation_rect" : [ -1.0, 225.0, 586.268798999999944, 35.433025000000001 ],
 					"proportion" : 0.39,
 					"rounded" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 0.0,
-					"bgcolor" : [ 0.137255, 0.145098, 0.160784, 0.65 ],
-					"id" : "obj-112",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 516.305603000000019, 718.0, 64.0, 64.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 34.0, 586.268798999999944, 226.433029000000005 ],
-					"proportion" : 0.39,
-					"rounded" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 0.0,
-					"bgcolor" : [ 0.367404, 0.389405, 0.430238, 1.0 ],
-					"id" : "obj-81",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 445.69598400000001, 718.0, 64.0, 64.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 16.0, 586.268798999999944, 244.433029000000005 ],
-					"proportion" : 0.39
 				}
 
 			}
@@ -6765,7 +6634,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1003.0, 310.863585999999998, 128.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 13.0, 129.633972, 406.0, 84.0 ]
+					"presentation_rect" : [ 12.0, 130.0, 406.0, 84.0 ]
 				}
 
 			}
@@ -8969,69 +8838,15 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "az.data-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "./utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.grainenvknob.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.grainenvmodes.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.granulate~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "az.sub-change-str.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "./sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-grainenvelope~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "./sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-granulator~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "./sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.waveform-knob.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.waveform-modes.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
- ],
 		"autosave" : 0,
-		"bgcolor" : [ 0.8, 0.501961, 0.501961, 1.0 ]
+		"bgcolor" : [ 0.529411764705882, 0.529411764705882, 0.529411764705882, 1.0 ],
+		"saved_attribute_attributes" : 		{
+			"locked_bgcolor" : 			{
+				"expression" : "themecolor.live_surface_bg"
+			}
+
+		}
+
 	}
 
 }

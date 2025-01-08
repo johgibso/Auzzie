@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -70,7 +70,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 49.0, 480.0, 36.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.474808, 0.0, 36.0, 17.0 ],
+					"presentation_rect" : [ 2.0, 0.0, 36.0, 17.0 ],
 					"text" : "Audio",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -120,7 +120,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 170.390380999999991, 352.0, 43.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.974807999999996, 197.0, 51.0, 18.0 ],
+					"presentation_rect" : [ 9.0, 197.0, 51.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0 ],
@@ -128,6 +128,7 @@
 							"parameter_invisible" : 1,
 							"parameter_longname" : "textbutton[1]",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "textbutton",
 							"parameter_type" : 3
 						}
@@ -177,8 +178,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -424,13 +425,9 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 86.0, 225.0, 47.0, 136.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 51.0, 41.0, 136.0 ],
+					"presentation_rect" : [ 14.0, 51.0, 41.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"modulationcolor" : 						{
-							"expression" : ""
-						}
-,
-						"textcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -448,6 +445,7 @@
 							"parameter_longname" : "input",
 							"parameter_mmax" : 12.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "input",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -456,7 +454,6 @@
 					}
 ,
 					"showname" : 0,
-					"textcolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"tricolor" : [ 1.0, 1.0, 1.0, 0.7 ],
 					"trioncolor" : [ 0.796078, 0.262745, 0.345098, 1.0 ],
 					"varname" : "mc.live.gain~"
@@ -476,7 +473,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 400.390380999999991, 471.0, 22.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.974807999999999, 44.863525000000003, 51.0, 147.0 ],
+					"presentation_rect" : [ 9.0, 45.0, 51.0, 147.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -500,7 +497,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 323.0, 80.5, 15.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 57.0, 3.0, 9.742592, 9.742592 ],
+					"presentation_rect" : [ 56.0, 3.0, 9.742592, 9.742592 ],
 					"rounded" : 15.0,
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
@@ -533,6 +530,7 @@
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "pictctrl[1]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "pictctrl[1]",
 							"parameter_type" : 2
 						}
@@ -593,7 +591,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 184.890380999999991, 480.0, 36.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.474808, 224.0, 36.0, 17.0 ],
+					"presentation_rect" : [ 2.0, 224.0, 36.0, 17.0 ],
 					"text" : "Audio",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -610,7 +608,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 328.0, 503.201538000000028, 39.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.474808, 18.0, 42.0, 17.0 ],
+					"presentation_rect" : [ 2.0, 18.0, 42.0, 17.0 ],
 					"text" : "AFADR",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -627,7 +625,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 106.0, 471.0, 64.0, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 16.0, 437.268768000000023, 19.0 ],
+					"presentation_rect" : [ -1.0, 16.0, 437.268768000000023, 19.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -644,7 +642,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 35.0, 471.0, 64.0, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 0.0, 437.268768000000023, 17.0 ],
+					"presentation_rect" : [ -1.0, 0.0, 437.268768000000023, 17.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -661,42 +659,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 321.0, 471.0, 64.0, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.474808, 224.0, 437.268768000000023, 35.433025000000001 ],
+					"presentation_rect" : [ -1.0, 224.0, 437.268768000000023, 35.433025000000001 ],
 					"proportion" : 0.39,
 					"rounded" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 0.0,
-					"bgcolor" : [ 0.137255, 0.145098, 0.160784, 0.65 ],
-					"id" : "obj-112",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 249.0, 471.0, 64.0, 64.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.474807999999996, 24.716514500000017, 437.268768000000023, 201.716514500000017 ],
-					"proportion" : 0.39,
-					"rounded" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 0.0,
-					"bgcolor" : [ 0.367404, 0.389405, 0.430238, 1.0 ],
-					"id" : "obj-81",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 178.390380999999991, 471.0, 64.0, 64.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ -0.525192000000001, 16.0, 437.268768000000023, 210.433029000000033 ],
-					"proportion" : 0.39
 				}
 
 			}
@@ -831,23 +796,15 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "az.audio-left-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "./utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.data-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "./utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
 		"autosave" : 0,
-		"bgcolor" : [ 0.8, 0.501961, 0.501961, 1.0 ]
+		"bgcolor" : [ 0.529411764705882, 0.529411764705882, 0.529411764705882, 1.0 ],
+		"saved_attribute_attributes" : 		{
+			"locked_bgcolor" : 			{
+				"expression" : "themecolor.live_surface_bg"
+			}
+
+		}
+
 	}
 
 }
