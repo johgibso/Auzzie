@@ -1,6 +1,7 @@
 v2.0.4 (1/8/25)
 	- Cosmetic changes to achieve compatibility with Max 9 themes without
 	  making modules illegible in Max 8.
+	- Add TOAZ and FROMAZ modules that simply wrap mc.pack~ and mc.unpack~.
 
 v2.0.3 (3/14/24)
 	- Fix snapshots not working correctly with GRANUL8R (symptoms: envelope
