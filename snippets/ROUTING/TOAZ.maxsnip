@@ -1,0 +1,49 @@
+{
+	"patcher" : 	{
+		"boxes" : [ 			{
+				"box" : 				{
+					"maxclass" : "bpatcher",
+					"annotation" : "## Combine two mono channels from Max objects into one Auzzie stereo output ##",
+					"varname" : "toaz",
+					"prototypename" : "pixl",
+					"viewvisibility" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"lockeddragscroll" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"lockedsize" : 0,
+					"bgmode" : 1,
+					"border" : 0,
+					"name" : "az.toaz~.maxpat",
+					"id" : "obj-1",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"patching_rect" : [ 10.0, 10.0, 53.0, 52.0 ],
+					"outlettype" : [ "multichannelsignal" ]
+				}
+
+			}
+ ],
+		"appversion" : 		{
+			"major" : 8,
+			"minor" : 6,
+			"revision" : 5,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"classnamespace" : "box",
+		"description" : "53 x 52, containing 1 object",
+		"tags" : "",
+		"snippetinfo" : 		{
+			"name" : "TOAZ",
+			"objects" : "jpatcher",
+			"tags" : "",
+			"description" : "53 x 52, containing 1 object",
+			"image" : "iVBORw0KGgoAAAANSUhEUgAAADUAAAA0CAYAAAAqunDVAAAABHNCSVQICAgIfAhkiAAABWhJREFUaIHtmWtMk2cUgJ+vtkqRSxEmIlhvMKv1Al4RWKKwJkPmYtZlJpCxyBjGJUZ0yRZCpDHZn8nITBaiPzAxLiEzkx9kyljDEuycgrfg5nSKoggizk0FR1N64eyHjs0plUvBlPVJvh/9es7pefJ+ad73OwogjDNUL7qB0SAg5S/8/6SysrI4fPgwUVFRY9XPU2zcuBGr1YrVaqWmpob9+/ezYsUKrzlepQwGA2azmbCwMJ82OhTi4+MxmUw4nU6cTifZ2dlUV1d7zfGbx6+goACz2YzNZiMyMpKgoKABY9Vj2NeIuH79OhqNBoCysjIcDseAsX6zUrt27eLu3bt0d3dTUVHhNXZQK2U2m+ns7ATAZrPR2to68i6HyIEDBzhz5gy1tbVUVlayatUq3G73gPEy0LV9+3b5Lzk5OQPGj8ZVVFQkIiLR0dECSHl5uYiIbNmyZcAchcDezz8ISPkL6sVlh150Dz5nXK5UQMpfCEj5C173fp+/kYpW82TI1z9d49ff7lOQvIB5L+nocjixXm6j6ueW/pgNxtm8ZtDzVVMz9dc6APg0K5nwoEn/qiR8+M0JepwD79+Gi1epbocTESEjIY6bD/7k0p37AOx/ey0xocFc6LyHYWoEyfpogieq+fLsFRTgvVXz0etC0Gom9Es97HWhoBAdqiVxehQOt8fnMn/j9fGzWE9T9G0jAPXXbvHR0ZP09QkxocEcOHOZnMo61lUcwe5yk52UAMCyGVPR60JwuD0kTo9ibmQ4AJ/UnWXnd6fQTHj0kztrT43KKj1X6lnM0IUA0NB6B4Aep5vzHX8wLTSYCSqFNxfOxt3XR2H1cQDeWjynP9diWo4xegoVjZewXmnzRf/PZMhSdpcLgFkRIf335kaG8bDXRbBGzasJcahVKgpfWQzA6/NnMkk9gXeWvUzW/JnYWjooP3HBR+0/myEf50+23qHX7eH95AWEBU0kIUrH1BAt1b/cIOuxwNFLrfze4+D2Qztr58by7rJ5bEkxAvDjjU7WzdcD8EPLbbocTt8aMUgpATx9j45dt7p6+PhoA0XpS/kgZSGePuH75nY+O9bEFxvS6HI4sVhP4/L0ERY0kbqCaWQkxKJSFACK0pf2182prKOr857PpZTFZYeGfUjUBU2kx+XG5enzZU8jZkRvkx6MwqPjC8bljiIg5S+MS6nAKzJ/ISDlLwxKas+ePVitVmbNmjXowhaLhfLycoxGI1arlcTExOH2OGSeK6XX69m6dSsmk4n8/PxBF16+fDlpaWmICB6PB5F//o+Ux/vA0eK5Unl5eahUKux2O3l5eajVatRqNe3t7Wzbtg2VSkVbWxs7duxgzZo1NDU10dLSwsqVKwEICQlhyZIlhIaGYjAYaGxsxG63U1VVxaJFi8ZeSqVSsWnTJs6fP09xcTExMTGsX78eRVGIjY1Fp9OhKApxcXGEh4dTUlLClClTKC0tJTz80YlXq9USExODVqulsrKSOXPmUFJSQkpKCrt37x57KZPJhF6vJz4+nsLCQgA2b97c/71arX5i9pqamsqxY8fYu3cvFy9efKqe0Wikvr6e0tJSampqMJlMXme3w8XrLj0/Px+3282+ffsQEdLT0zGZTMTFxeF0OklKSiI7O7s/vqGhgZSUFHJzczEYDDQ3Nz9R7+rVq6xevZrc3FwyMjKw2WxeZ7cjYcCJXG9vrxw5cqT/c2ZmpoiIFBcXy8GDB0VEpKOjQ0RELBaLZGZmys2bN8XlcklXV5ecO3dO0tLSREQkIyNDUlNTpa2tTUREjh8/LsnJyaM1gRx+ckREhCiK8sQ9jUYjkydPfm7eKMkExqN+RUDKXxiXUn8Bq6Zy5c6pmnEAAAAASUVORK5CYII="
+		}
+
+	}
+
+}
