@@ -55,7 +55,7 @@
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 9.0,
-					"hint" : "The TOAZ module takes audio from Max objects in the form of two mono channel inputs and merges these into an Auzzie stereo patch cable for use by Auzzie modules.",
+					"hint" : "The TO-AZ module takes audio from Max objects in the form of two mono channel inputs and merges these into an Auzzie stereo patch cable for use by Auzzie modules.",
 					"id" : "obj-4",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -63,7 +63,7 @@
 					"patching_rect" : [ 172.0, 253.0, 47.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 18.0, 44.0, 17.0 ],
-					"text" : "TOAZ",
+					"text" : "TO-AZ",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
