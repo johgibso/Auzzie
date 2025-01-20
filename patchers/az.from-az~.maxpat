@@ -42,7 +42,7 @@
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 9.0,
-					"hint" : "The FROMAZ module takes audio from an Auzzie stereo patch cable and splits it into two mono channels for use in Max audio objects.",
+					"hint" : "The FROM-AZ module takes audio from an Auzzie stereo patch cable and splits it into two mono channels for use in Max audio objects.",
 					"id" : "obj-4",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -50,7 +50,7 @@
 					"patching_rect" : [ 172.0, 253.0, 47.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 3.0, 18.0, 64.0, 17.0 ],
-					"text" : "FROMAZ",
+					"text" : "FROM-AZ",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
