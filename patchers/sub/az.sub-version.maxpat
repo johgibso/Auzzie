@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -79,9 +79,16 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 26.0, 167.0, 81.0, 19.0 ],
 					"readonly" : 1,
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"tabmode" : 0,
-					"text" : "v2.0.0b4",
-					"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ]
+					"text" : "v2.0.4",
+					"textcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
 				}
 
 			}
@@ -188,7 +195,6 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
 
