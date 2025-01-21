@@ -47,9 +47,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 172.0, 253.0, 47.0, 17.0 ],
+					"patching_rect" : [ 172.0, 253.0, 50.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 18.0, 64.0, 17.0 ],
+					"presentation_rect" : [ 3.0, 18.0, 54.0, 17.0 ],
 					"text" : "FROM-AZ",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -66,7 +66,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 172.0, 185.0, 19.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 36.0, 35.0, 19.0, 17.0 ],
+					"presentation_rect" : [ 38.0, 35.0, 19.0, 17.0 ],
 					"text" : "R",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
