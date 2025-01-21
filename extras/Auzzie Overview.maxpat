@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 2,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 106.0, 53.0, 657.0, 673.0 ],
+		"rect" : [ 175.0, 88.0, 657.0, 673.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,7 +41,7 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"contrastactivetab" : 0,
-					"htabcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"htabcolor" : [ 0.115, 0.115, 0.115, 1.0 ],
 					"id" : "obj-22",
 					"maxclass" : "tab",
 					"multiline" : 0,
@@ -51,7 +51,22 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 452.00000274181366, 400.0, 180.0, 24.0 ],
 					"rounded" : 20.0,
-					"tabcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"saved_attribute_attributes" : 					{
+						"htabcolor" : 						{
+							"expression" : "themecolor.theme_bgcolor"
+						}
+,
+						"tabcolor" : 						{
+							"expression" : "themecolor.theme_bgcolor"
+						}
+,
+						"textcolor" : 						{
+							"expression" : "themecolor.theme_textcolor_inverse"
+						}
+
+					}
+,
+					"tabcolor" : [ 0.115, 0.115, 0.115, 1.0 ],
 					"tabs" : [ " Advanced Techniques" ]
 				}
 
@@ -85,7 +100,7 @@
 , 			{
 				"box" : 				{
 					"contrastactivetab" : 0,
-					"htabcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"htabcolor" : [ 0.115, 0.115, 0.115, 1.0 ],
 					"id" : "obj-24",
 					"maxclass" : "tab",
 					"multiline" : 0,
@@ -95,7 +110,22 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 452.00000274181366, 365.5, 180.0, 24.0 ],
 					"rounded" : 20.0,
-					"tabcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"saved_attribute_attributes" : 					{
+						"htabcolor" : 						{
+							"expression" : "themecolor.theme_bgcolor"
+						}
+,
+						"tabcolor" : 						{
+							"expression" : "themecolor.theme_bgcolor"
+						}
+,
+						"textcolor" : 						{
+							"expression" : "themecolor.theme_textcolor_inverse"
+						}
+
+					}
+,
+					"tabcolor" : [ 0.115, 0.115, 0.115, 1.0 ],
 					"tabs" : [ " Auzzie Abstractions" ]
 				}
 
@@ -129,7 +159,7 @@
 , 			{
 				"box" : 				{
 					"contrastactivetab" : 0,
-					"htabcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"htabcolor" : [ 0.115, 0.115, 0.115, 1.0 ],
 					"id" : "obj-16",
 					"maxclass" : "tab",
 					"multiline" : 0,
@@ -139,7 +169,22 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 452.00000274181366, 331.5, 180.0, 24.0 ],
 					"rounded" : 20.0,
-					"tabcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"saved_attribute_attributes" : 					{
+						"htabcolor" : 						{
+							"expression" : "themecolor.theme_bgcolor"
+						}
+,
+						"tabcolor" : 						{
+							"expression" : "themecolor.theme_bgcolor"
+						}
+,
+						"textcolor" : 						{
+							"expression" : "themecolor.theme_textcolor_inverse"
+						}
+
+					}
+,
+					"tabcolor" : [ 0.115, 0.115, 0.115, 1.0 ],
 					"tabs" : [ " Auzzie Data and Control" ]
 				}
 
@@ -153,14 +198,22 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 450.00000274181366, 269.0, 109.19417667388916, 23.0 ],
-					"text" : "Learn More...."
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
+					"text" : "Learn More....",
+					"textcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"contrastactivetab" : 0,
-					"htabcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"htabcolor" : [ 0.115, 0.115, 0.115, 1.0 ],
 					"id" : "obj-26",
 					"maxclass" : "tab",
 					"multiline" : 0,
@@ -170,7 +223,22 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 452.00000274181366, 297.5, 180.0, 24.0 ],
 					"rounded" : 20.0,
-					"tabcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"saved_attribute_attributes" : 					{
+						"htabcolor" : 						{
+							"expression" : "themecolor.theme_bgcolor"
+						}
+,
+						"tabcolor" : 						{
+							"expression" : "themecolor.theme_bgcolor"
+						}
+,
+						"textcolor" : 						{
+							"expression" : "themecolor.theme_textcolor_inverse"
+						}
+
+					}
+,
+					"tabcolor" : [ 0.115, 0.115, 0.115, 1.0 ],
 					"tabs" : [ "Using Snapshots with Auzzie" ]
 				}
 
@@ -253,8 +321,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 35.0, 639.5, 103.0, 18.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "John Gibson © 2019",
-					"textcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ]
+					"textcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
 				}
 
 			}
@@ -313,7 +388,7 @@
 , 			{
 				"box" : 				{
 					"contrastactivetab" : 0,
-					"htabcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"htabcolor" : [ 0.115, 0.115, 0.115, 1.0 ],
 					"id" : "obj-4",
 					"maxclass" : "tab",
 					"multiline" : 0,
@@ -323,7 +398,22 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 452.00000274181366, 85.0, 180.0, 24.0 ],
 					"rounded" : 20.0,
-					"tabcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"saved_attribute_attributes" : 					{
+						"htabcolor" : 						{
+							"expression" : "themecolor.theme_bgcolor"
+						}
+,
+						"tabcolor" : 						{
+							"expression" : "themecolor.theme_bgcolor"
+						}
+,
+						"textcolor" : 						{
+							"expression" : "themecolor.theme_textcolor_inverse"
+						}
+
+					}
+,
+					"tabcolor" : [ 0.115, 0.115, 0.115, 1.0 ],
 					"tabs" : [ "How to Insert Modules" ]
 				}
 
@@ -422,7 +512,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 35.0, 136.0, 350.0, 45.0 ],
-					"text" : "Control sound within each module, or feed it Max messages. Save settings using Shapshots."
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
+					"text" : "Control sound within each module, or feed it Max messages. Save settings using Shapshots.",
+					"textcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
 				}
 
 			}
@@ -436,14 +534,22 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 35.0, 85.0, 362.0, 45.0 ],
-					"text" : "Auzzie lets you patch together audio players, synthesizers, and effects to make sound quickly."
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
+					"text" : "Auzzie lets you patch together audio players, synthesizers, and effects to make sound quickly.",
+					"textcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"contrastactivetab" : 0,
-					"htabcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"htabcolor" : [ 0.115, 0.115, 0.115, 1.0 ],
 					"id" : "obj-23",
 					"maxclass" : "tab",
 					"multiline" : 0,
@@ -453,7 +559,22 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 452.00000274181366, 155.0, 180.0, 24.0 ],
 					"rounded" : 20.0,
-					"tabcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"saved_attribute_attributes" : 					{
+						"htabcolor" : 						{
+							"expression" : "themecolor.theme_bgcolor"
+						}
+,
+						"tabcolor" : 						{
+							"expression" : "themecolor.theme_bgcolor"
+						}
+,
+						"textcolor" : 						{
+							"expression" : "themecolor.theme_textcolor_inverse"
+						}
+
+					}
+,
+					"tabcolor" : [ 0.115, 0.115, 0.115, 1.0 ],
 					"tabs" : [ "Auzzie Examples" ]
 				}
 
@@ -461,7 +582,7 @@
 , 			{
 				"box" : 				{
 					"contrastactivetab" : 0,
-					"htabcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"htabcolor" : [ 0.115, 0.115, 0.115, 1.0 ],
 					"id" : "obj-25",
 					"maxclass" : "tab",
 					"multiline" : 0,
@@ -471,7 +592,22 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 452.00000274181366, 119.5, 180.0, 24.0 ],
 					"rounded" : 20.0,
-					"tabcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"saved_attribute_attributes" : 					{
+						"htabcolor" : 						{
+							"expression" : "themecolor.theme_bgcolor"
+						}
+,
+						"tabcolor" : 						{
+							"expression" : "themecolor.theme_bgcolor"
+						}
+,
+						"textcolor" : 						{
+							"expression" : "themecolor.theme_textcolor_inverse"
+						}
+
+					}
+,
+					"tabcolor" : [ 0.115, 0.115, 0.115, 1.0 ],
 					"tabs" : [ "A Guide to Auzzie Modules" ]
 				}
 
@@ -491,7 +627,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ -24.0, -167.0 ],
-					"patching_rect" : [ 154.0, 44.0, 69.0, 21.0 ],
+					"patching_rect" : [ 154.0, 46.0, 69.0, 21.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -505,8 +641,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 35.0, 22.5, 124.0, 50.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "Auzzie",
-					"textcolor" : [ 0.153442, 0.153442, 0.153442, 1.0 ]
+					"textcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
 				}
 
 			}
@@ -829,86 +972,14 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "az.aplayr~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.audio-left-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "../patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.data-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "../patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.out-h~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.rezfiltr~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-change-str.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-player~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-version.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.waveform-knob.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.waveform-modes.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "grooveduck2.maxpat",
-				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/sequencing-looping/audio-rate-sequencing-looping/lib",
-				"patcherrelativepath" : "../../../../../Library/Application Support/Cycling '74/Max 8/Examples/sequencing-looping/audio-rate-sequencing-looping/lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
 		"autosave" : 0,
-		"bgcolor" : [ 0.660858, 0.705119, 0.831795, 1.0 ]
+		"saved_attribute_attributes" : 		{
+			"locked_bgcolor" : 			{
+				"expression" : "themecolor.theme_locked_bgcolor"
+			}
+
+		}
+
 	}
 
 }
