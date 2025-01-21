@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 724.0, 85.0, 589.0, 309.0 ],
+		"rect" : [ 724.0, 85.0, 589.0, 359.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,13 +41,99 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Ableton Sans Bold",
+					"id" : "obj-12",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 147.0, 322.0, 227.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 147.0, 321.0, 231.0, 21.0 ],
+					"text" : "Convert Max dual mono to Auzzie stereo",
+					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgfillcolor_proportion" : 0.5,
+					"bgfillcolor_type" : "gradient",
+					"fontname" : "Ableton Sans Bold",
+					"fontsize" : 11.0,
+					"gradient" : 1,
+					"id" : "obj-23",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 20.0, 321.0, 121.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 320.0, 121.0, 22.0 ],
+					"text" : "TO-AZ",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Ableton Sans Bold",
+					"id" : "obj-11",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 147.0, 166.0, 227.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 146.5, 164.5, 232.0, 21.0 ],
+					"text" : "Convert Auzzie stereo to Max dual mono",
+					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"bgfillcolor_proportion" : 0.5,
+					"bgfillcolor_type" : "gradient",
+					"fontname" : "Ableton Sans Bold",
+					"fontsize" : 11.0,
+					"gradient" : 1,
+					"id" : "obj-8",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 20.0, 165.0, 121.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 164.0, 121.0, 22.0 ],
+					"text" : "FROM-AZ",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Ableton Sans Bold",
 					"id" : "obj-21",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 146.5, 189.0, 231.0, 21.0 ],
+					"patching_rect" : [ 147.0, 295.0, 231.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.5, 269.0, 227.0, 21.0 ],
+					"presentation_rect" : [ 147.0, 295.0, 227.0, 21.0 ],
 					"text" : "Change panning within a stereo stream",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ]
 				}
@@ -72,9 +158,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.5, 189.0, 121.0, 22.0 ],
+					"patching_rect" : [ 20.0, 295.0, 121.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 19.5, 268.0, 121.0, 22.0 ],
+					"presentation_rect" : [ 20.0, 294.0, 121.0, 22.0 ],
 					"text" : "PANR",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
@@ -88,7 +174,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 146.5, 269.0, 209.0, 21.0 ],
+					"patching_rect" : [ 147.0, 114.0, 209.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 146.5, 113.0, 195.0, 21.0 ],
 					"text" : "Record sound and send to players",
@@ -115,7 +201,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.5, 268.0, 121.0, 22.0 ],
+					"patching_rect" : [ 20.0, 113.0, 121.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 112.0, 121.0, 22.0 ],
 					"text" : "CAPTR",
@@ -131,7 +217,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 145.5, 243.0, 209.0, 21.0 ],
+					"patching_rect" : [ 146.0, 88.0, 209.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 146.5, 87.0, 195.0, 21.0 ],
 					"text" : "Same, but with horizontal fader",
@@ -158,7 +244,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 18.5, 242.0, 121.0, 22.0 ],
+					"patching_rect" : [ 19.0, 87.0, 121.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 86.0, 121.0, 22.0 ],
 					"text" : "AFADR-H",
@@ -174,9 +260,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 146.5, 112.66666699999999, 209.0, 21.0 ],
+					"patching_rect" : [ 147.0, 271.0, 209.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.5, 243.666666999999961, 195.0, 21.0 ],
+					"presentation_rect" : [ 147.0, 270.0, 195.0, 21.0 ],
 					"text" : "Same, but with horizontal fader",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ]
 				}
@@ -201,9 +287,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.5, 111.0, 121.0, 22.0 ],
+					"patching_rect" : [ 20.0, 269.0, 121.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 19.5, 242.0, 121.0, 22.0 ],
+					"presentation_rect" : [ 20.0, 268.0, 121.0, 22.0 ],
 					"text" : "OUT-H",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
@@ -217,7 +303,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 145.5, 215.0, 209.0, 21.0 ],
+					"patching_rect" : [ 146.0, 61.0, 209.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 146.5, 61.0, 195.0, 21.0 ],
 					"text" : "Simple stereo fader",
@@ -244,7 +330,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.5, 215.0, 121.0, 22.0 ],
+					"patching_rect" : [ 20.0, 61.0, 121.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 60.0, 121.0, 22.0 ],
 					"text" : "AFADR",
@@ -262,7 +348,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 71.5, 327.0, 84.0, 22.0 ],
+					"patching_rect" : [ 73.0, 376.0, 84.0, 22.0 ],
 					"text" : "sprintf az.%s~"
 				}
 
@@ -276,7 +362,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 71.5, 423.279069767441854, 56.0, 22.0 ],
+					"patching_rect" : [ 73.0, 472.0, 56.0, 22.0 ],
 					"text" : "pcontrol"
 				}
 
@@ -290,7 +376,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 71.5, 391.279069767441854, 52.0, 22.0 ],
+					"patching_rect" : [ 73.0, 440.0, 52.0, 22.0 ],
 					"text" : "help $1"
 				}
 
@@ -304,7 +390,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 71.5, 359.279069767441854, 101.0, 22.0 ],
+					"patching_rect" : [ 73.0, 408.0, 101.0, 22.0 ],
 					"text" : "prepend symbol"
 				}
 
@@ -350,7 +436,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 146.5, 164.0, 209.0, 21.0 ],
+					"patching_rect" : [ 147.0, 140.0, 209.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 146.5, 139.0, 195.0, 21.0 ],
 					"text" : "Crossfade between two streams",
@@ -365,9 +451,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 146.5, 86.66666699999999, 209.0, 21.0 ],
+					"patching_rect" : [ 147.0, 245.0, 209.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.5, 217.666666999999961, 195.0, 21.0 ],
+					"presentation_rect" : [ 147.0, 244.0, 195.0, 21.0 ],
 					"text" : "Send sound to the outside world",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ]
 				}
@@ -380,9 +466,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 146.5, 138.33333300000001, 209.0, 21.0 ],
+					"patching_rect" : [ 147.0, 218.0, 209.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.5, 191.333333000000039, 195.0, 21.0 ],
+					"presentation_rect" : [ 147.0, 217.0, 195.0, 21.0 ],
 					"text" : "Mix four streams together",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ]
 				}
@@ -407,7 +493,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.5, 163.0, 121.0, 22.0 ],
+					"patching_rect" : [ 20.0, 139.0, 121.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 138.0, 121.0, 22.0 ],
 					"text" : "CROSSFADR",
@@ -435,9 +521,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.5, 137.0, 121.0, 22.0 ],
+					"patching_rect" : [ 20.0, 217.0, 121.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 19.5, 190.0, 121.0, 22.0 ],
+					"presentation_rect" : [ 20.0, 216.0, 121.0, 22.0 ],
 					"text" : "MIXR",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
@@ -463,9 +549,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.5, 85.0, 121.0, 22.0 ],
+					"patching_rect" : [ 20.0, 243.0, 121.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 19.5, 216.0, 121.0, 22.0 ],
+					"presentation_rect" : [ 20.0, 242.0, 121.0, 22.0 ],
 					"text" : "OUT",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
@@ -491,9 +577,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.5, 59.0, 121.0, 22.0 ],
+					"patching_rect" : [ 20.0, 191.0, 121.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 19.5, 164.0, 121.0, 22.0 ],
+					"presentation_rect" : [ 20.0, 190.0, 121.0, 22.0 ],
 					"text" : "IN",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
@@ -507,9 +593,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 146.5, 61.0, 209.0, 21.0 ],
+					"patching_rect" : [ 147.0, 193.0, 209.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.5, 166.0, 195.0, 21.0 ],
+					"presentation_rect" : [ 147.0, 192.0, 195.0, 21.0 ],
 					"text" : "Bring live sound into Max",
 					"textcolor" : [ 0.996078, 0.996078, 0.996078, 1.0 ]
 				}
@@ -554,6 +640,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-136", 0 ],
+					"order" : 0,
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"order" : 1,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -596,7 +691,21 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-136", 0 ],
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-136", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-136", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
