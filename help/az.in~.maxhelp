@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 2,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 121.0, 87.0, 425.0, 817.0 ],
+		"rect" : [ 100.0, 87.0, 425.0, 817.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,6 +41,19 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 1.0,
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 99.0, 111.0, 201.0, 24.0 ],
+					"text" : "Make sound (e.g., sing into mic)."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bubblepoint" : 1.0,
 					"bubbleside" : 0,
 					"bubbleusescolors" : 1,
@@ -51,6 +64,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 107.0, 271.0, 304.0, 114.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "L > R / stereo - If \"L > R,\" copy the left input channel to the right channel. (This is the default.) If \"stereo,\" keep the two input channels independent.\n\nlowcut - suppress very low frequencies caused by stage rumble, vocal pops, etc.\n\nmute - mute signal leaving this module",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -105,23 +125,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"id" : "obj-6",
-					"ignoreclick" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 107.0, 112.0, 194.0, 22.0 ],
-					"rounded" : 20.0,
-					"text" : "Make sound (e.g., sing into mic)",
-					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"annotation" : "## A dual-mono delay line ##",
 					"bgmode" : 1,
 					"border" : 0,
@@ -156,6 +159,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.0, 16.0, 353.0, 47.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "IN / az.in~",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -173,6 +183,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.0, 65.0, 353.0, 24.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "Take mono or stereo input from outside of Max.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -323,72 +340,20 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "M4L.vdelay~.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Tools resources",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.2delayr~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.audio-left-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "../patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.data-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "../patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.in~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.out~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-delay-mono-gliss-deluxe-voice~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/poly",
-				"patcherrelativepath" : "../patchers/poly",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-delay-mono-nogliss-deluxe-voice~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/poly",
-				"patcherrelativepath" : "../patchers/poly",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-xfade~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
 		"autosave" : 0,
-		"bgcolor" : [ 0.898, 0.898, 0.898, 1.0 ],
-		"editing_bgcolor" : [ 0.898, 0.898, 0.898, 1.0 ]
+		"bgcolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
+		"editing_bgcolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
+		"saved_attribute_attributes" : 		{
+			"editing_bgcolor" : 			{
+				"expression" : "themecolor.theme_editing_bgcolor"
+			}
+,
+			"locked_bgcolor" : 			{
+				"expression" : "themecolor.theme_locked_bgcolor"
+			}
+
+		}
+
 	}
 
 }

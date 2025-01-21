@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 2,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 91.0, 87.0, 621.0, 189.0 ],
+		"rect" : [ 472.0, 112.0, 621.0, 189.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -179,7 +179,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -196,6 +196,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 110.0, 121.0, 22.0 ],
 					"text" : "GRANUL8R",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -206,7 +207,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -223,6 +224,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 84.0, 121.0, 22.0 ],
 					"text" : "APLAYR",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -233,7 +235,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -250,6 +252,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 58.0, 121.0, 22.0 ],
 					"text" : "1SHOTR",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -260,7 +263,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -277,6 +280,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 136.0, 121.0, 22.0 ],
 					"text" : "STRIKR",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -347,7 +351,6 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
 		"autosave" : 0,
 		"bgcolor" : [ 0.475, 0.188, 0.263, 1.0 ],
 		"editing_bgcolor" : [ 0.474509803921569, 0.188235294117647, 0.262745098039216, 1.0 ]

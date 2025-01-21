@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 2,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 115.0, 87.0, 628.0, 851.0 ],
+		"rect" : [ 100.0, 87.0, 628.0, 851.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -154,8 +154,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.0, 16.0, 364.0, 47.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "FMODR / az.fmodr~",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
 				}
 
 			}
@@ -171,8 +178,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.0, 65.0, 364.0, 24.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "Classic 2-operator FM synthesizer.",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
 				}
 
 			}
@@ -188,8 +202,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 99.5, 455.0, 398.0, 355.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "carrier & modulator waveforms - sine, triangle, square, saw\n\nA, D, S, R - envelope for each note\n\nharm - harmonicity factor (multiply this by carrier frequency to get modulator frequency)\n\nI button - use either integer or floating-point ratio\n\nindex - modulation index; must be > 0 to enable the harm dial\n\nvibrato waveform - sine, triangle, square, saw up/down\n\npoly - set how many simultaneous notes you need\n\nport - how long to glide between pitches when you've set poly to 1.\n\nrate - vibrato speed [hz]\n\ndepth - vibrato depth\n\nbend - pitch bend with two-octave range (R to reset)\n\npan - location of sound within the stereo field (R to reset)\n\nR button - reset by stopping sounding notes",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
 				}
 
 			}
@@ -524,121 +545,20 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "M4L.pan1~.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Tools resources",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.audio-left-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "../patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.data-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "../patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.fmodr~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.out~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-fm-monovoice~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-fm-multivoice~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/poly",
-				"patcherrelativepath" : "../patchers/poly",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-fm~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-simpleFM~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-wavetables2~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-wavetables~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.wave-sawdown.svg",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.wave-sawup.svg",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.wave-sine.svg",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.wave-square.svg",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.wave-triangle.svg",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "svg",
-				"implicit" : 1
-			}
- ],
 		"autosave" : 0,
-		"bgcolor" : [ 0.898, 0.898, 0.898, 1.0 ],
-		"editing_bgcolor" : [ 0.898, 0.898, 0.898, 1.0 ]
+		"bgcolor" : [ 0.065, 0.095, 0.115, 1.0 ],
+		"editing_bgcolor" : [ 0.065, 0.095, 0.115, 1.0 ],
+		"saved_attribute_attributes" : 		{
+			"editing_bgcolor" : 			{
+				"expression" : "themecolor.theme_editing_bgcolor"
+			}
+,
+			"locked_bgcolor" : 			{
+				"expression" : "themecolor.theme_locked_bgcolor"
+			}
+
+		}
+
 	}
 
 }

@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 2,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -179,7 +179,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -196,6 +196,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 137.0, 121.0, 22.0 ],
 					"text" : "WAVR",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -206,7 +207,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -223,6 +224,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 111.0, 121.0, 22.0 ],
 					"text" : "STRUMR",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -233,7 +235,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -250,6 +252,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 59.0, 121.0, 22.0 ],
 					"text" : "FMODR",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -260,7 +263,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -277,6 +280,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 85.0, 121.0, 22.0 ],
 					"text" : "NOISR",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -347,7 +351,6 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
 		"autosave" : 0,
 		"bgcolor" : [ 0.8, 0.396078, 0.0, 1.0 ],
 		"editing_bgcolor" : [ 0.8, 0.396078431372549, 0.0, 1.0 ]

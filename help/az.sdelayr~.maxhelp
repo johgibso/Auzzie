@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 2,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -195,8 +195,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.0, 16.0, 435.0, 47.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "SDELAYR / az.sdelayr~",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
 				}
 
 			}
@@ -213,8 +220,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.0, 65.0, 435.0, 42.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "Use a 32-band spectral delay to refract the spectrum into many shimmering strands. Each strand gets its own delay.",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
 				}
 
 			}
@@ -230,8 +244,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 218.0, 485.0, 476.0, 275.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "Each vertical bar represents a specific, relatively narrow frequency band. The bar sets the delay time for that band, relative to the maxtime setting.\n\nzero - set all delay times to zero\n\nrotate - apply the delay times shown to the left channel, and apply them to the right channel, but shifted right by the number of bands set for rotate. The purpose is to have different content in the two channels to create a vivid stereo effect from mono source sound.\n\nrand - set the vertical bars to random heights\n\nfeedback - the amount of sound exiting a delay line that returns to the front of the delay line, thus creating a series of echoes with declining amplitude. All bands share the same feedback value.\n\nmaxtime - the maximum time [seconds] that a delay can have, represented by a vertical bar of maximum height.\n\nwetdry - adjust the balance between the input and the output of the spectral delay",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
 				}
 
 			}
@@ -435,90 +456,20 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "M4L.pan1~.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Tools resources",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.audio-left-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "../patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.data-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "../patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.out~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sdelayr~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.spectdelay~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "az.strikr~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-1shotr-voice~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/poly",
-				"patcherrelativepath" : "../patchers/poly",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-change-str.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-listconform.js",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/javascript",
-				"patcherrelativepath" : "../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-pan2~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-xfade~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
 		"autosave" : 0,
-		"bgcolor" : [ 0.898, 0.898, 0.898, 1.0 ],
-		"editing_bgcolor" : [ 0.898, 0.898, 0.898, 1.0 ]
+		"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+		"editing_bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+		"saved_attribute_attributes" : 		{
+			"editing_bgcolor" : 			{
+				"expression" : "themecolor.theme_editing_bgcolor"
+			}
+,
+			"locked_bgcolor" : 			{
+				"expression" : "themecolor.theme_locked_bgcolor"
+			}
+
+		}
+
 	}
 
 }

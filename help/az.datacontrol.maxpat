@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -92,7 +92,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 916.666666666666742, 465.0, 66.0, 22.0 ],
 					"text" : "random 64"
 				}
@@ -169,7 +169,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bubble" : 1,
 					"fontface" : 0,
 					"fontname" : "Arial",
@@ -179,8 +179,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 559.666666666666742, 386.0, 96.0, 24.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "Click to start.",
-					"textcolor" : [ 0.153442, 0.153442, 0.153442, 1.0 ]
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -226,7 +233,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 780.666666666666742, 465.0, 66.0, 22.0 ],
 					"text" : "random 80"
 				}
@@ -288,7 +295,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 533.666666666666742, 464.0, 66.0, 22.0 ],
 					"text" : "random 24"
 				}
@@ -296,7 +303,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bubble" : 1,
 					"bubblepoint" : 0.0,
 					"bubbleside" : 2,
@@ -310,8 +317,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 753.666666666666742, 374.0, 116.0, 58.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "Practice your Max patching skills...",
-					"textcolor" : [ 0.153442, 0.153442, 0.153442, 1.0 ]
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -341,7 +355,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bubble" : 1,
 					"bubblepoint" : 0.2,
 					"fontface" : 0,
@@ -353,8 +367,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 566.166666666666742, 165.5, 150.0, 37.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "Turn the same note off with a velocity of 0.",
-					"textcolor" : [ 0.153442, 0.153442, 0.153442, 1.0 ]
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -372,7 +393,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bubble" : 1,
 					"bubblepoint" : 0.8,
 					"fontface" : 0,
@@ -384,8 +405,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 557.666666666666742, 100.609375, 183.0, 51.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "note-on with...\n  - note number 60 (middle C)\n  - velocity of 120",
-					"textcolor" : [ 0.153442, 0.153442, 0.153442, 1.0 ]
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -429,7 +457,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bubble" : 1,
 					"bubblepoint" : 0.0,
 					"bubbleside" : 2,
@@ -441,15 +469,22 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 287.0, 309.0, 70.0, 39.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "Here too...",
-					"textcolor" : [ 0.153442, 0.153442, 0.153442, 1.0 ],
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bubble" : 1,
 					"bubblepoint" : 0.0,
 					"fontface" : 0,
@@ -461,8 +496,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 257.666666666666686, 192.5, 173.0, 51.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "Click and drag the number boxes to watch and hear parameter changes.",
-					"textcolor" : [ 0.153442, 0.153442, 0.153442, 1.0 ],
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -541,13 +583,21 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 326.0, 577.0, 111.0, 37.0 ],
-					"text" : "Turn on audio, and set volume."
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
+					"text" : "Turn on audio, and set volume.",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bubble" : 1,
 					"bubblepoint" : 1.0,
 					"bubbleside" : 0,
@@ -559,8 +609,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.0, 285.0, 94.0, 39.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "Play the sound.",
-					"textcolor" : [ 0.153442, 0.153442, 0.153442, 1.0 ],
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -1130,159 +1187,6 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "M4L.pan1~.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Tools resources",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "M4L.vdelay~.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Tools resources",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.1delayr~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.audio-left-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "../patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.data-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "../patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.out-h~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.strikr~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-1shotr-voice~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/poly",
-				"patcherrelativepath" : "../patchers/poly",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-change-str.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-delay-simple-nogliss~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-pan2~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-wavetables~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-wavr-monovoice~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-wavr-multivoice~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/poly",
-				"patcherrelativepath" : "../patchers/poly",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-wavr~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-xfade~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.wave-sawdown.svg",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.wave-sawup.svg",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.wave-sine.svg",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.wave-square.svg",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.wave-triangle.svg",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.wavr~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
 		"autosave" : 0,
 		"snapshot" : 		{
 			"filetype" : "C74Snapshot",
@@ -1342,7 +1246,7 @@
 							"polyphony-val" : [ 8 ],
 							"textbutton[1]" : [ 0 ],
 							"textbutton[3]" : [ 1 ],
-							"textedit" : [ "" ]
+							"textedit" : [ "isthatyou.aiff" ]
 						}
 
 					}

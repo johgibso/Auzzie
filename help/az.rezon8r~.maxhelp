@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 2,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -208,8 +208,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.0, 16.0, 448.0, 47.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "REZON8R / az.rezon8r~",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
 				}
 
 			}
@@ -226,8 +233,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.0, 65.0, 547.0, 78.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "Send input through a bank of parallel delay-based resonators. Change the feedback to adjust the prominence and ringiness of the pitches. Tune each resonator by sending MIDI notes to REZON8R. If you don’t send any MIDI notes, you will hear the original sound.",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
 				}
 
 			}
@@ -243,8 +257,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 98.0, 539.0, 535.0, 275.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "Tune resonators by sending MIDI notes. The MIDI note number sets the fundamental frequency of a resonator. Harmonic partials above this also ring. The velocity is used only to indicate note-on or note-off: all non-zero velocities have the same effect.\n\ndetune - offset the tuning of all the filters [cents]. Useful when pairing with another instance of REZON8R.\n\nfeedback - control the intensity of the resonator effect. The higher the feedback, the longer the ringing pitch will last.\n\nN - negative feedback, which changes the quality of the resonance and the harmonic structure of its partials.\n\ncutoff - set frequency of lowpass filter applied to the resonators to reduce their bright edge\n\nwidth - adjust width of stereo image\n\nautopan - turn on to randomly assign panning locations to each new note\n\nwetdry - adjust the balance between the input and the output of the resonator bank",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
 				}
 
 			}
@@ -613,100 +634,20 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "M4L.pan1~.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Tools resources",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.aplayr~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.audio-left-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "../patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.data-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "../patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.out~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.rezon8r~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-change-str.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-comb-voice~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/poly",
-				"patcherrelativepath" : "../patchers/poly",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-player~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-xfade~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.waveform-knob.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.waveform-modes.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "grooveduck2.maxpat",
-				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/sequencing-looping/audio-rate-sequencing-looping/lib",
-				"patcherrelativepath" : "../../../../../Library/Application Support/Cycling '74/Max 8/Examples/sequencing-looping/audio-rate-sequencing-looping/lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
 		"autosave" : 0,
-		"bgcolor" : [ 0.898, 0.898, 0.898, 1.0 ],
-		"editing_bgcolor" : [ 0.898, 0.898, 0.898, 1.0 ]
+		"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+		"editing_bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+		"saved_attribute_attributes" : 		{
+			"editing_bgcolor" : 			{
+				"expression" : "themecolor.theme_editing_bgcolor"
+			}
+,
+			"locked_bgcolor" : 			{
+				"expression" : "themecolor.theme_locked_bgcolor"
+			}
+
+		}
+
 	}
 
 }

@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 172.0, 104.0, 937.0, 382.0 ],
+		"rect" : [ 121.0, 314.0, 937.0, 382.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -146,8 +146,15 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 534.5, 214.730074541284125, 108.0, 37.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "Here's the new snapshot.",
-					"textcolor" : [ 0.153442, 0.153442, 0.153442, 1.0 ]
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -183,8 +190,15 @@
 					"presentation" : 1,
 					"presentation_linecount" : 4,
 					"presentation_rect" : [ 320.0, 153.609375, 98.0, 64.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "Click on \"New...\" to create a new shapshot.",
-					"textcolor" : [ 0.153442, 0.153442, 0.153442, 1.0 ]
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -250,9 +264,16 @@
 					"patching_rect" : [ 70.0, 245.0, 129.0, 64.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
-					"presentation_rect" : [ 79.173249551166961, 227.730074541284125, 101.000000000000014, 78.0 ],
+					"presentation_rect" : [ 79.173249551166961, 227.730074541284125, 102.0, 78.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "Click the Snapshots (camera) icon in the right toolbar.",
-					"textcolor" : [ 0.153442, 0.153442, 0.153442, 1.0 ]
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -261,7 +282,7 @@
 					"angle" : 270.0,
 					"bgcolor" : [ 0.301961, 0.301961, 0.301961, 0.0 ],
 					"border" : 2,
-					"bordercolor" : [ 0.203210636973381, 0.203210636973381, 0.203210636973381, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-25",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -271,7 +292,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 658.0, 90.609375, 261.0, 273.0 ],
 					"proportion" : 0.5,
-					"rounded" : 24
+					"rounded" : 24,
+					"saved_attribute_attributes" : 					{
+						"bordercolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+
 				}
 
 			}
@@ -280,7 +308,7 @@
 					"angle" : 270.0,
 					"bgcolor" : [ 0.301961, 0.301961, 0.301961, 0.0 ],
 					"border" : 2,
-					"bordercolor" : [ 0.203210636973381, 0.203210636973381, 0.203210636973381, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-19",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -290,7 +318,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 433.0, 90.609375, 220.0, 273.0 ],
 					"proportion" : 0.5,
-					"rounded" : 24
+					"rounded" : 24,
+					"saved_attribute_attributes" : 					{
+						"bordercolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+
 				}
 
 			}
@@ -315,7 +350,7 @@
 					"angle" : 270.0,
 					"bgcolor" : [ 0.301961, 0.301961, 0.301961, 0.0 ],
 					"border" : 2,
-					"bordercolor" : [ 0.203210636973381, 0.203210636973381, 0.203210636973381, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-15",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -325,7 +360,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 17.0, 90.609375, 173.0, 273.0 ],
 					"proportion" : 0.5,
-					"rounded" : 24
+					"rounded" : 24,
+					"saved_attribute_attributes" : 					{
+						"bordercolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+
 				}
 
 			}
@@ -334,7 +376,7 @@
 					"angle" : 270.0,
 					"bgcolor" : [ 0.301961, 0.301961, 0.301961, 0.0 ],
 					"border" : 2,
-					"bordercolor" : [ 0.203210636973381, 0.203210636973381, 0.203210636973381, 1.0 ],
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-16",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -344,7 +386,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 195.0, 90.609375, 233.0, 273.0 ],
 					"proportion" : 0.5,
-					"rounded" : 24
+					"rounded" : 24,
+					"saved_attribute_attributes" : 					{
+						"bordercolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+
 				}
 
 			}
@@ -466,28 +515,6 @@
 			}
  ],
 		"lines" : [  ],
-		"dependency_cache" : [ 			{
-				"name" : "az.snapshots-1.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.snapshots-2.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.snapshots-3.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
- ],
 		"autosave" : 0
 	}
 

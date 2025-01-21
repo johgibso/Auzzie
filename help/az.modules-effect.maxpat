@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -59,7 +59,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -76,6 +76,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 371.0, 121.0, 22.0 ],
 					"text" : "TREMR",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -101,7 +102,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -118,6 +119,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 345.0, 121.0, 22.0 ],
 					"text" : "SDELAYR",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -143,7 +145,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -160,6 +162,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 319.0, 121.0, 22.0 ],
 					"text" : "RINGR",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -185,7 +188,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -202,6 +205,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 293.0, 121.0, 22.0 ],
 					"text" : "REZON8R",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -227,7 +231,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -244,6 +248,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 267.0, 121.0, 22.0 ],
 					"text" : "REZFILTR",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -269,7 +274,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -286,6 +291,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 241.0, 121.0, 22.0 ],
 					"text" : "REVERBER8R",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -311,7 +317,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -328,6 +334,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 215.0, 121.0, 22.0 ],
 					"text" : "GATR",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -353,7 +360,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -370,6 +377,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 189.0, 121.0, 22.0 ],
 					"text" : "EQUALIZR",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -395,7 +403,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -412,6 +420,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 163.0, 121.0, 22.0 ],
 					"text" : "DRIVR",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -557,7 +566,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -574,6 +583,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 137.0, 121.0, 22.0 ],
 					"text" : "COMBR",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -584,7 +594,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -601,6 +611,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 111.0, 121.0, 22.0 ],
 					"text" : "BANKR",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -611,7 +622,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -628,6 +639,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 85.0, 121.0, 22.0 ],
 					"text" : "2DELAYR",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -638,7 +650,7 @@
 					"bgcolor2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color1" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_color2" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -655,6 +667,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 19.5, 59.0, 121.0, 22.0 ],
 					"text" : "1DELAYR",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
 				}
 
@@ -788,7 +801,6 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
 		"autosave" : 0,
 		"bgcolor" : [ 0.184, 0.443, 0.259, 1.0 ],
 		"editing_bgcolor" : [ 0.184313725490196, 0.443137254901961, 0.258823529411765, 1.0 ]

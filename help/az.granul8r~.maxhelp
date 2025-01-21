@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 2,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 125.0, 87.0, 756.0, 818.0 ],
+		"rect" : [ 100.0, 87.0, 756.0, 818.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -104,6 +104,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 232.0, 530.0, 417.0, 127.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "grain rate - how quickly grains play [grains / sec]\ngrain dur - how long each grain lasts [msec]\nin jitter - maximum random variation when reading waveform [msec]\nout jitter - maximum random variation applied to grain rate [msec]\namp jitter - maximum random variation of grain amplitude [dB]\ntranspose - transposition of each grain [semitones]\ntrans jitter - maximum random variation of transposition [semitones]\ngain - overall volume [dB]\ngrain envelope - envelope shape for each grain",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -145,6 +152,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 261.0, 722.447368421052488, 274.0, 33.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "drag vertically to zoom in and out, and drag\nhorizontally to scroll",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -162,6 +176,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 261.0, 691.0, 274.0, 33.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "drag vertically to set the duration to loop, and\ndrag horizontally to set the time range",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -179,6 +200,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 261.0, 659.0, 230.0, 33.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "drag horizontally to select a portion of the waveform to loop",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -251,6 +279,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.0, 16.0, 487.0, 47.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "GRANUL8R / az.granul8r~",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -269,6 +304,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.0, 65.0, 441.0, 60.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "Play a sound file repeatedly, in a loop, with start and end points that you define. Do this by granulating the sound — smashing it into tiny grains and then reconstructing them.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -286,6 +328,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 232.0, 467.0, 307.0, 60.0 ],
+					"saved_attribute_attributes" : 					{
+						"textcolor" : 						{
+							"expression" : "themecolor.live_control_fg"
+						}
+
+					}
+,
 					"text" : "speed - set speed as a multiple of original speed\nlow/high - change the range of speeds\nR button - select entire sound file\nZ button - zoom waveform to show entire sound file",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -506,7 +555,6 @@
 		"parameters" : 		{
 			"obj-1::obj-101" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
 			"obj-1::obj-102" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-1::obj-106" : [ "textbutton", "textbutton", 0 ],
 			"obj-1::obj-107" : [ "transposition jitter", "trans jitter", 0 ],
 			"obj-1::obj-114" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
 			"obj-1::obj-121" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
@@ -521,6 +569,7 @@
 			"obj-1::obj-16" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
 			"obj-1::obj-165" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
 			"obj-1::obj-171" : [ "pictctrl[26]", "pictctrl[1]", 0 ],
+			"obj-1::obj-175" : [ "flonum[1]", "flonum[1]", 0 ],
 			"obj-1::obj-179" : [ "reset-trans", "reset-trans", 0 ],
 			"obj-1::obj-190" : [ "input jitter", "in jitter", 0 ],
 			"obj-1::obj-202" : [ "output jitter", "out jitter", 0 ],
@@ -571,91 +620,20 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "az.audio-left-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "../patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.data-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "../patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.grainenvknob.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.grainenvmodes.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.granul8r~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.granulate~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "az.out~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-change-str.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-grainenvelope~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-granulator~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.waveform-knob.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.waveform-modes.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
- ],
 		"autosave" : 0,
-		"bgcolor" : [ 0.898, 0.898, 0.898, 1.0 ],
-		"editing_bgcolor" : [ 0.898, 0.898, 0.898, 1.0 ]
+		"bgcolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
+		"editing_bgcolor" : [ 0.898039, 0.898039, 0.898039, 1.0 ],
+		"saved_attribute_attributes" : 		{
+			"editing_bgcolor" : 			{
+				"expression" : "themecolor.theme_editing_bgcolor"
+			}
+,
+			"locked_bgcolor" : 			{
+				"expression" : "themecolor.theme_locked_bgcolor"
+			}
+
+		}
+
 	}
 
 }
