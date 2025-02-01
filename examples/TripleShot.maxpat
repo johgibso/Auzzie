@@ -47,9 +47,9 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 294.5, 472.63586399999997, 48.0, 136.0 ],
+					"patching_rect" : [ 269.0, 311.0, 48.0, 136.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 217.5, 389.0, 43.0, 83.0 ],
+					"presentation_rect" : [ 218.0, 404.0, 43.0, 83.0 ],
 					"saved_attribute_attributes" : 					{
 						"textcolor" : 						{
 							"expression" : ""
@@ -60,7 +60,7 @@
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_modmode" : 0,
-							"parameter_shortname" : "reverb",
+							"parameter_shortname" : "send >",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
 						}
@@ -1371,7 +1371,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 294.5, 349.0, 189.0, 111.0 ],
+					"patching_rect" : [ 371.0, 328.0, 189.0, 111.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 263.0, 384.0, 189.0, 111.0 ],
 					"prototypename" : "pixl",
@@ -1628,12 +1628,12 @@
 						"live.grid" : [ 3, 16, 1, 0, 1, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ],
 						"live.grid[1]" : [ 3, 16, 1, 0, 1, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ],
 						"live.grid[2]" : [ 3, 16, 1, 0, 1, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2 ],
-						"mutate" : [ 0 ],
-						"mutate-freq" : [ 1.0 ],
-						"reverb-gain" : [ -21.878668999999999 ],
-						"steps1" : [ 8, 0, 0, 0, 3, 0, 6, 0, 0, 4, 0, 0, 6, 0, 7, 0 ],
-						"steps2" : [ 0, 0, 0, 0, 7, 0, 0, 5, 0, 4, 0, 0, 7, 0, 0, 0 ],
-						"steps3" : [ 5, 4, 4, 4, 5, 4, 3, 6, 5, 3, 3, 3, 4, 5, 2, 5 ]
+						"mutate" : [ 1 ],
+						"mutate-freq" : [ 8.0 ],
+						"reverb-gain" : [ -30.503937007873976 ],
+						"steps1" : [ 7, 3, 1, 2, 3, 3, 4, 1, 0, 1, 5, 7, 1, 3, 3, 5 ],
+						"steps2" : [ 1, 5, 1, 3, 3, 2, 5, 2, 8, 1, 7, 1, 5, 0, 7, 6 ],
+						"steps3" : [ 7, 7, 2, 0, 6, 3, 6, 2, 5, 2, 1, 3, 0, 7, 7, 0 ]
 					}
 ,
 					"text" : "autopattr @greedy 1",
@@ -1667,7 +1667,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-40", 0 ],
+					"destination" : [ "obj-60", 0 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -1819,8 +1819,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-40", 0 ],
+					"order" : 0,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -1828,7 +1828,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-60", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -1887,7 +1887,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-60", 0 ],
+					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-40", 0 ]
 				}
 
@@ -2170,7 +2170,7 @@
 			"obj-3::obj-63" : [ "4", "4", 0 ],
 			"obj-3::obj-64" : [ "M", "main", 0 ],
 			"obj-3::obj-69" : [ "textbutton[4]", "textbutton", 0 ],
-			"obj-40" : [ "reverb", "reverb", 0 ],
+			"obj-40" : [ "reverb", "send >", 0 ],
 			"obj-60::obj-102" : [ "pictctrl[37]", "pictctrl[1]", 0 ],
 			"obj-60::obj-16" : [ "output", "output", 0 ],
 			"obj-60::obj-86" : [ "textbutton[5]", "textbutton", 0 ],

@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -40,13 +40,37 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1158.0, 565.0, 29.5, 22.0 ],
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1076.0, 479.0, 54.0, 22.0 ],
+					"text" : "deferlow"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1075.5, 545.0, 61.0, 22.0 ],
-					"text" : "delay 500"
+					"patching_rect" : [ 1075.5, 527.0, 67.0, 22.0 ],
+					"text" : "delay 1000"
 				}
 
 			}
@@ -171,8 +195,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1075.5, 505.0, 67.0, 22.0 ],
-					"text" : "delay 1500"
+					"patching_rect" : [ 1158.0, 527.0, 67.0, 22.0 ],
+					"text" : "delay 1200"
 				}
 
 			}
@@ -356,7 +380,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1075.5, 576.25, 29.5, 22.0 ],
+					"patching_rect" : [ 1075.5, 565.25, 29.5, 22.0 ],
 					"text" : "1"
 				}
 
@@ -368,7 +392,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1075.5, 473.0, 60.0, 22.0 ],
+					"patching_rect" : [ 1076.0, 445.0, 60.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -528,10 +552,10 @@
 					}
 ,
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 854, 172, 1208, 300 ],
+						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 970, 165, 1725, 1005 ]
+						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
 					"text" : "pattrstorage doublegran-storage @savemode 3 @greedy 1",
@@ -660,18 +684,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 1.0, 0.501961, 0.0, 1.0 ],
-					"destination" : [ "obj-12", 0 ],
-					"order" : 0,
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 1.0, 0.501961, 0.0, 1.0 ],
-					"destination" : [ "obj-23", 0 ],
-					"order" : 1,
+					"color" : [ 0.990448236465454, 0.502245008945465, 0.032880764454603, 1.0 ],
+					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -743,7 +757,34 @@
 , 			{
 				"patchline" : 				{
 					"color" : [ 1.0, 0.501961, 0.0, 1.0 ],
+					"destination" : [ "obj-12", 0 ],
+					"order" : 1,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 1.0, 0.501961, 0.0, 1.0 ],
 					"destination" : [ "obj-13", 0 ],
+					"order" : 0,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 1.0, 0.501961, 0.0, 1.0 ],
+					"destination" : [ "obj-23", 0 ],
+					"order" : 2,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 1.0, 0.501961, 0.0, 1.0 ],
+					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -758,7 +799,7 @@
 , 			{
 				"patchline" : 				{
 					"color" : [ 1.0, 0.501961, 0.0, 1.0 ],
-					"destination" : [ "obj-14", 0 ],
+					"destination" : [ "obj-37", 0 ],
 					"source" : [ "obj-33", 0 ]
 				}
 
@@ -800,6 +841,14 @@
 					"destination" : [ "obj-3", 0 ],
 					"order" : 0,
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.990448236465454, 0.502245008945465, 0.032880764454603, 1.0 ],
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -848,7 +897,6 @@
 			"obj-10::obj-7" : [ "range[7]", "onoff", 0 ],
 			"obj-1::obj-101" : [ "pictctrl[283]", "pictctrl[1]", 0 ],
 			"obj-1::obj-102" : [ "pictctrl[284]", "pictctrl[1]", 0 ],
-			"obj-1::obj-106" : [ "textbutton", "textbutton", 0 ],
 			"obj-1::obj-107" : [ "transposition jitter", "trans jitter", 0 ],
 			"obj-1::obj-114" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
 			"obj-1::obj-121" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
@@ -863,6 +911,7 @@
 			"obj-1::obj-16" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
 			"obj-1::obj-165" : [ "pictctrl[10]", "pictctrl[1]", 0 ],
 			"obj-1::obj-171" : [ "pictctrl[26]", "pictctrl[1]", 0 ],
+			"obj-1::obj-175" : [ "flonum[1]", "flonum[1]", 0 ],
 			"obj-1::obj-179" : [ "reset-trans", "reset-trans", 0 ],
 			"obj-1::obj-190" : [ "input jitter", "in jitter", 0 ],
 			"obj-1::obj-202" : [ "output jitter", "out jitter", 0 ],
@@ -888,7 +937,6 @@
 			"obj-22::obj-86" : [ "textbutton[1]", "textbutton", 0 ],
 			"obj-2::obj-101" : [ "pictctrl[15]", "pictctrl[1]", 0 ],
 			"obj-2::obj-102" : [ "pictctrl[16]", "pictctrl[1]", 0 ],
-			"obj-2::obj-106" : [ "textbutton[2]", "textbutton", 0 ],
 			"obj-2::obj-107" : [ "transposition jitter[1]", "trans jitter", 0 ],
 			"obj-2::obj-114" : [ "pictctrl[11]", "pictctrl[1]", 0 ],
 			"obj-2::obj-121" : [ "pictctrl[32]", "pictctrl[1]", 0 ],
@@ -903,6 +951,7 @@
 			"obj-2::obj-16" : [ "pictctrl[14]", "pictctrl[1]", 0 ],
 			"obj-2::obj-165" : [ "pictctrl[33]", "pictctrl[1]", 0 ],
 			"obj-2::obj-171" : [ "pictctrl[31]", "pictctrl[1]", 0 ],
+			"obj-2::obj-175" : [ "flonum[2]", "flonum[1]", 0 ],
 			"obj-2::obj-179" : [ "reset-trans[1]", "reset-trans", 0 ],
 			"obj-2::obj-190" : [ "input jitter[1]", "in jitter", 0 ],
 			"obj-2::obj-202" : [ "output jitter[1]", "out jitter", 0 ],
@@ -1229,137 +1278,6 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "DoubleGran.json",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/examples",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.audio-left-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "../patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.combr~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.data-handler.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/utils",
-				"patcherrelativepath" : "../patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.grainenvknob.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.grainenvmodes.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.granul8r~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.granulate~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "az.mixr~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.out~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.reverber8r~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.ringr~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-change-str.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-grainenvelope~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-granulator~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-xfade~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.sub-yafr2~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/patchers/sub",
-				"patcherrelativepath" : "../patchers/sub",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.waveform-knob.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "az.waveform-modes.png",
-				"bootpath" : "~/Documents/Max 8/Packages/Auzzie/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
- ],
 		"autosave" : 0,
 		"bgcolor" : [ 0.564705882352941, 0.505882352941176, 0.6, 1.0 ],
 		"editing_bgcolor" : [ 0.893051326274872, 0.893051385879517, 0.893051326274872, 1.0 ]
