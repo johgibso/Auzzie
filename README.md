@@ -25,4 +25,5 @@ All sound in Auzzie is stereo. You connect modules with single patch cords, each
 
 Auzzie exposes most of its settings to the patch attribute (pattr) preset system, and it also works with the Snapshot feature for quick preservation of patch state.
 
+Auzzie contains updated versions of the granulate~, spectdelay~, specteq~, and strum~ externals that used to have the "jg." prefix and now have the "az." prefix. They live in the "externals" folder in the Auzzie package and have accompanying revised help files (".maxhelp" files in the "help" folder and ".maxref.xml" files in the "docs" folder). These externals and help files do not depend on anything else in Auzzie, so you can use them without pulling the rest of Auzzie into your projects.
 
