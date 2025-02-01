@@ -1,3 +1,6 @@
+v2.0.5 (2/1/25)
+	- Fix problems with a few help files.
+
 v2.0.4 (1/8/25)
 	- Cosmetic changes to achieve compatibility with Max 9 themes without
 	  making modules illegible in Max 8.
