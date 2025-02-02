@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 120.0, 68.0, 1335.0, 536.0 ],
+		"rect" : [ 79.0, 66.0, 1037.0, 536.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -42,204 +42,14 @@
 				"box" : 				{
 					"fontname" : "Arial Bold",
 					"fontsize" : 12.0,
-					"id" : "obj-53",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1053.24999862909317, 496.0, 261.0, 20.0 ],
-					"text" : "Or learn MC, and use Auzzie in MC patches."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-51",
-					"maxclass" : "newobj",
-					"numinlets" : 5,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1131.0, 461.0, 61.0, 22.0 ],
-					"text" : "comb~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-50",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1076.0, 461.0, 42.0, 22.0 ],
-					"text" : "lores~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-49",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1153.0, 413.0, 107.0, 33.0 ],
-					"text" : "Split MC cable into two channels."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-48",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 1076.0, 418.0, 74.0, 22.0 ],
-					"text" : "mc.unpack~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-47",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1153.0, 243.5, 138.0, 33.0 ],
-					"text" : "Combine two channels into one MC cable."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-45",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 1076.0, 249.0, 69.0, 22.0 ],
-					"text" : "mc.pack~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"basictuning" : 440,
-					"data" : 					{
-						"clips" : [ 							{
-								"absolutepath" : "drumLoop.aif",
-								"filename" : "drumLoop.aif",
-								"filekind" : "audiofile",
-								"id" : "u559000656",
-								"loop" : 1,
-								"content_state" : 								{
-									"loop" : 1
-								}
-
-							}
- ]
-					}
-,
-					"followglobaltempo" : 0,
-					"formantcorrection" : 0,
-					"id" : "obj-44",
-					"maxclass" : "playlist~",
-					"mode" : "basic",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"originallength" : [ 0.0, "ticks" ],
-					"originaltempo" : 120.0,
-					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1076.0, 199.0, 150.0, 30.0 ],
-					"pitchcorrection" : 0,
-					"quality" : "basic",
-					"timestretch" : [ 0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"annotation" : "## An overdrive distortion processor ##",
-					"bgmode" : 1,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-37",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "az.drivr~.maxpat",
-					"numinlets" : 4,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 1076.0, 289.0, 144.0, 111.0 ],
-					"prototypename" : "pixl",
-					"varname" : "drivr",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 12.0,
-					"id" : "obj-30",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1053.24999862909317, 137.609375, 272.0, 47.0 ],
-					"text" : "Even if you don’t know MC, you can connect single-channel Max audio signals to Auzzie modules easily."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"border" : 3.0,
 					"id" : "obj-11",
-					"linecolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"maxclass" : "live.line",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1035.287243932933507, 60.609375, 5.0, 458.0 ],
-					"saved_attribute_attributes" : 					{
-						"linecolor" : 						{
-							"expression" : "themecolor.live_control_fg"
-						}
-
-					}
-
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 12.0,
-					"id" : "obj-15",
-					"linecount" : 3,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1053.24999862909317, 88.609375, 272.0, 47.0 ],
-					"text" : "Auzzie audio is based on Max MC, which lets you combine multiple audio channels into a single patch cable. All Auzzie audio is stereo."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial Bold",
-					"fontsize" : 14.0,
-					"id" : "obj-23",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1053.0, 60.609375, 263.0, 22.0 ],
-					"text" : "[4] Connecting Max Audio with Auzzie"
+					"patching_rect" : [ 19.0, 398.0, 278.0, 114.0 ],
+					"presentation_linecount" : 8,
+					"text" : "Another way to be more precise is to hold down the shift key while dragging a dial (such as the freq dial above). This will give you better resolution than dragging without the shift key.\n\nAlso, you can click on a dial, type a number, and press the return key to set the dial exactly to that number."
 				}
 
 			}
@@ -916,48 +726,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-48", 0 ],
-					"source" : [ "obj-37", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-45", 1 ],
-					"source" : [ "obj-44", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-45", 0 ],
-					"source" : [ "obj-44", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
-					"source" : [ "obj-45", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-50", 0 ],
-					"source" : [ "obj-48", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-51", 0 ],
-					"source" : [ "obj-48", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-13", 1 ],
 					"source" : [ "obj-5", 0 ]
 				}
@@ -981,13 +749,6 @@
 			"obj-33::obj-102" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
 			"obj-33::obj-16" : [ "output[1]", "output", 0 ],
 			"obj-33::obj-86" : [ "textbutton[2]", "textbutton", 0 ],
-			"obj-37::obj-20" : [ "pictctrl[13]", "pictctrl[1]", 0 ],
-			"obj-37::obj-3" : [ "wetdry[1]", "wetdry", 0 ],
-			"obj-37::obj-4" : [ "color", "color", 0 ],
-			"obj-37::obj-48" : [ "pictctrl[2]", "pictctrl[2]", 0 ],
-			"obj-37::obj-53" : [ "pictctrl[4]", "pictctrl", 0 ],
-			"obj-37::obj-7" : [ "onoff[1]", "onoff", 0 ],
-			"obj-37::obj-9" : [ "drive", "drive", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -1004,18 +765,6 @@
 ,
 				"obj-33::obj-16" : 				{
 					"parameter_longname" : "output[1]"
-				}
-,
-				"obj-37::obj-20" : 				{
-					"parameter_longname" : "pictctrl[13]"
-				}
-,
-				"obj-37::obj-3" : 				{
-					"parameter_longname" : "wetdry[1]"
-				}
-,
-				"obj-37::obj-53" : 				{
-					"parameter_longname" : "pictctrl[4]"
 				}
 
 			}
